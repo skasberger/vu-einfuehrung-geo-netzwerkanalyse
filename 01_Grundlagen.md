@@ -33,6 +33,7 @@ Verkehr
 BILD
 
 Social Media / Web Science
+https://de.wikipedia.org/wiki/Soziale_Netzwerkanalyse
 
 BILD
 
@@ -86,6 +87,8 @@ BILD
 
 
 #### Graphviz
+[Graphviz](http://www.graphviz.org/) v2.26.3 ([doc](http://www.graphviz.org/Documentation.php))
+
 BILD
 
 ```
@@ -137,6 +140,11 @@ https://de.wikipedia.org/wiki/SQLite
 
 [Shapefile](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf): Das Dateiformat Shapefile (oft Shapedaten oder Shape genannt) ist ein ursprünglich für die Software ArcView der Firma ESRI entwickeltes Format für Geodaten.
 https://de.wikipedia.org/wiki/Shapefile
+
+[GeoJSON](http://geojson.org/) 
+ist ein offenes Format zum Encodieren einer Vielzahl von geographischen Datenstrukturen. Der Name stammt von JSON (JavaScript Object Notation). Daher ist ein jedes GeoJSON Object auch ein JSON Object, wodurch JSON Tools für das Verarbeiten von GeoJSON Daten verwendet werden können. GeoJSON erlaubt es geographische Daten in einer von Mensch lesbaren Sprache zu speichern die kompakter ist als XML. Räumliche Datenformat-Typen die GeoJSON unterstützt sind mitunter point, polygon, multipolygons, features, geometry collections und bounding boxes, welche zusammen mit charakteristischen Informationen und Attributen gespeichert werden. Die Geometrien und deren Verhältnisse besitzen Eltern-Objekte, wie z.B. feature collections. GeoJSON erlaubt auch das spezifizieren von geographischen Koordinatensystemen mittels OGC CRS (coordinate reference system) oder mit EPSG Code. Wenn kein CRS definiert wird, verwendet GeoJSON den WGS84 Geoid.
+[Spezifikation](http://geojson.org/geojson-spec.html)
+http://wiki.alpine-geckos.at/wiki/GeoJSON
 
 ### Open Data
 BILD
