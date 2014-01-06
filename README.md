@@ -3,7 +3,7 @@ VU Einführung in die Netzwerkanalyse
  
 Die Lehrveranstaltung bietet eine Einführung in die Netzwerk Analyse, ins besondere von räumlichen Netzwerken.
 
-Hier veröffentlichen wir unsere Projektaufgabe: Erstellen eines Skriptums zur Einführung in die räumliche Netzwerkanalyse mit freier und offener Software. 
+Hier veröffentlichen wir unsere Projektaufgabe: Erstellen eines Skriptums zur Einführung in die räumliche Netzwerkanalyse mit freier und offener Software. Das Skriptum wird gemeinsam von David Steinwender und [Stefan Kasberger](http://twitter.com/stefankasberger) erstellt.
 
 Sprache: Deutsch
 - Dokumentation: CC BY AT 3.0
@@ -14,10 +14,16 @@ Sprache: Deutsch
 
 **Verwendete Software**
 - Betriebssystem: [Ubuntu](http://www.ubuntu.com/) 12.04 und 13.10
-- [Quantum GIS](http://qgis.org), v2.0.1 [doc](http://qgis.org/de/docs/index.html)
-- [GRASS GIS](http://grass.osgeo.org/) v6.4.3 [doc](http://grass.osgeo.org/documentation/)
-- [R](http://www.r-project.org/) v3.0.2
-- [Python](http://www.python.org/) v2.7.5+ [doc](http://www.python.org/doc/)
+- [Quantum GIS (QGIS)](http://qgis.org), v2.0.1 ([doc](http://qgis.org/de/docs/index.html))
+- [GRASS GIS](http://grass.osgeo.org/) v6.4.3 ([doc](http://grass.osgeo.org/documentation/))
+- [R](http://www.r-project.org/) v3.0.2 ([doc]())
+- [Python](http://www.python.org/) v2.7.5+ ([doc](http://www.python.org/doc/))
+- [PostgreSQL]() v ([doc]())
+- [PostGIS]() v ([doc]())
+- [pgRouting]() v ([doc]())
+
+**Verwendete Datensets**
+
 
 ## Aufbau Skriptum
 
