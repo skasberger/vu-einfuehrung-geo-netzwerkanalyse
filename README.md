@@ -43,6 +43,12 @@ Um was geht es in dem Abschnitt
 
 ### Quellen
 
+## ToDo
+- Lizenzauszeichnungen bei den Daten und Dokumenten
+- Encoding fixen
+- http://wiki.osgeo.org/wiki/Public_Geospatial_Data_Project ansehen
+- OSM Daten: Wege Öffis, Haltestellen, Knoten Straße, 
+
 
 
 

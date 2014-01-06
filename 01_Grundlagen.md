@@ -88,9 +88,9 @@ BILD
 #### Graphviz
 BILD
 
-'''
+```
 sudo apt-get install graphviz
-'''
+```
 
 [Using graphviz to draw graphs](http://avedo.net/338/using-graphviz-to-draw-graphs/)
 
@@ -112,9 +112,11 @@ von source compilieren
 
 
 in cmake ordner gehen
+```
 cmake ..
 make
 sudo make install
+```
 
 [QGIS pgrouting tag](http://planet.qgis.org/planet/tag/pgrouting/)
 
