@@ -100,10 +100,10 @@ sudo apt-get install graphviz
 #### Postgresql und postGIS
 BILDER
 
-[Install in Ubuntu 13.10](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS21UbuntuPGSQL93Apt)
+[Install/Setup in Ubuntu 13.10](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS21UbuntuPGSQL93Apt)
 
 [pgRouting](http://pgrouting.org/)
-anleitung http://docs.pgrouting.org/2.0/en/pgRoutingDocumentation.pdf
+[Anleitung](http://docs.pgrouting.org/2.0/en/pgRoutingDocumentation.pdf)
 
 packete installieren
 sudo make installt install libboost-graph-dev
