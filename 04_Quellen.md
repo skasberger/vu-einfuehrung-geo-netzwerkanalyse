@@ -16,6 +16,7 @@ Ganz am Ende, wenn alles schon fertig ist!
 [Setup PostGis in Ubuntu 13.10](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS21UbuntuPGSQL93Apt)
 [A quick tutorial to SpatiaLite - a Spatial extension for SQLite](http://www.gaia-gis.it/gaia-sins/spatialite-tutorial-2.3.1.html)
 [Funktionsweise Dijkstra Algorithmus](https://www.youtube.com/watch?v=Q5ebFH8Yho4)
+[OpenStreetMap mit QGis](http://www.qgis.org/en/docs/user_manual/osm/openstreetmap.html)
 
 
 ## Literatur

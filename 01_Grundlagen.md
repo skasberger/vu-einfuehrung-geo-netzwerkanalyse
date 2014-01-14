@@ -158,8 +158,7 @@ BILD
 BILD
 
 [OpenStreetMap](http://wiki.openstreetmap.org/wiki/Map_Features) stellt die gesamten Daten unter der [Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/) zur Verfügung.
-
-
+[OpenStreetMap mit QGis](http://www.qgis.org/en/docs/user_manual/osm/openstreetmap.html)
 
 
 
