@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>16.06918644396472828</xmin>
-            <ymin>48.01416944868530123</ymin>
-            <xmax>16.67990218128717927</xmax>
-            <ymax>48.42747363405344885</ymax>
+            <xmin>16.1691924653791439</xmin>
+            <ymin>48.08297235210806519</ymin>
+            <xmax>16.57723507063155566</xmax>
+            <ymax>48.35911672870253852</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -23,7 +23,7 @@
             </spatialrefsys>
         </destinationsrs>
     </mapcanvas>
-    <legend updateDrawingOrder="true" activeLayer="wien_strassengraph_knoten20140106161351472">
+    <legend updateDrawingOrder="true" activeLayer="osm_wien_polygons20140106160000033">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="wien_ubahn_points" showFeatureCount="0">
             <filegroup open="true" hidden="false">
                 <legendlayerfile isInOverview="0" layerid="wien_ubahn_points20140106155032271" visible="1"/>

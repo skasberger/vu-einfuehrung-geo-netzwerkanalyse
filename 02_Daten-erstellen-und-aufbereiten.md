@@ -1,13 +1,41 @@
+# Preprocessing
+
+Strassennetz Steiermark ansehen http://data.steiermark.at/cms/beitrag/11822084/97108894/?AppInt_OGD_ID=53
 
 
 ## Einleitung
 Kurzer einleitender Text, was in der Markdown file gemacht wird.
 
+## Workflow
+
+
+* Daten besorgen: 
+	Grundlage zumeist Shapefile
+	Rohdaten sichern
+* Daten aufbereiten: 
+	Fehler bereinigen
+	Daten verknüpfen/vereinen
+	mit Attributen anreichern
+	Standardisieren/harmonisieren
+	auf eine Datei / auf ein passendes Dateiformat zusammen führen	
+	routing spezifisches
+		konnektivitäten, impedanzen, costs, turns festlegen	
+		brücken, überführungen, tunnel, unterführungen
+* Daten modellieren und analysieren: 
+	Routing
+	Service Areas
+	Shortest Paths
+* Daten präsentieren: 
+	Karte zeichnen
+	Daten für weiter Analysen exportieren
+
 ## OpenStreetMap
 Die Daten aus der [OpenStreetMap](http://wiki.openstreetmap.org/wiki/Map_Features) werden mittels [QGIS](http://qgis.org) runtergeladen und gespeichert.
 
-Hintergrund Orthophoto importieren
+Hintergrund Orthophoto importieren zur optischen Kontrolle
+
 OpenStreetMap Daten runterladen
+
 graz.osm
 wien.osm
 
@@ -48,8 +76,6 @@ BILD
 
 Dateien öffnen und Encoding kontrollieren (Table Button)
 
-
-
 ## OGD Wien
 Auf Datenportal gehen und link markieren.
 
@@ -70,7 +96,7 @@ Encoding auf Latin1 stellen
 
 BILD
 
-Speichern als spatialite
+Speichern als spatialite und shapefile
 Um weiterfolgend besser arbeiten zu können, macht es Sinn die Daten lokal zu speichern, damit nicht bei jedesmal beim Zoomen die neuen Daten beim Server abgefragt werden müssen. 
 
 ```
@@ -109,9 +135,26 @@ BILD
 Vergleich Haltestellen: OpenStreetMap Points mit Strassengraph (Knoten) und Öffentlichen Verkehrs-Liniennetz (Kanten). Beispiel Haltestelle U-Bahn, Haltestelle Öffentlicher Verkehr, 
 
 
+## Routingfähiges Netzwerk erstellen
+Layer verknüpfen
+
+### Netzwerke vereinen
+Konnektivität herstellen
+
+### Kosten
+je nach Kategorie
+
+
+### Impedanzen
+
+
+### Exportieren
+als shapefile, als spatialite file
 
 
 
+
+## Häufige Fehler
 
 
 

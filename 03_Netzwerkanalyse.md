@@ -1,4 +1,4 @@
-
+# Netzwerkanalyse
 
 
 
@@ -33,3 +33,12 @@ Dykstra
 
 
 ## Vehicle Routing Problem
+https://en.wikipedia.org/wiki/Vehicle_routing_problem
+
+other Tools
+https://github.com/mck-/Open-VRP
+https://github.com/jsprit/jsprit
+http://www.optaplanner.org/
+
+
+## Häufige Fehler

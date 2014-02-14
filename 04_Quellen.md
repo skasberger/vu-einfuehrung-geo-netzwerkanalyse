@@ -1,6 +1,7 @@
+# Quellen
 
-
-Ganz am Ende, wenn alles schon fertig ist!
+[Social Network Analysis Course @ openscienceASAP](http://openscienceasap.org/education/courses/social-network-analysis/)
+[Social Network Analysis Youtube Playlist](https://www.youtube.com/playlist?list=PLhk-E9DWN_pOWHq2SnEFCn9lzHMBi1meF&feature=mh_lolz)
 
 ## Openness
 - [OSGeo](http://www.osgeo.org/)
@@ -17,7 +18,7 @@ Ganz am Ende, wenn alles schon fertig ist!
 [A quick tutorial to SpatiaLite - a Spatial extension for SQLite](http://www.gaia-gis.it/gaia-sins/spatialite-tutorial-2.3.1.html)
 [Funktionsweise Dijkstra Algorithmus](https://www.youtube.com/watch?v=Q5ebFH8Yho4)
 [OpenStreetMap mit QGis](http://www.qgis.org/en/docs/user_manual/osm/openstreetmap.html)
-
+[GEOSTAT 2011 Summer School in Landau ](http://www.uni-koblenz-landau.de/landau/fb7/umweltwissenschaften/landscape-ecology/Teaching/geostat)
 
 ## Literatur
 
@@ -25,8 +26,8 @@ Ganz am Ende, wenn alles schon fertig ist!
 
 ### Wissenschaftliche Monographien
 - [The New Science of Cities](https://mitpress.mit.edu/books/new-science-cities) by Michael Batty
-- [ Networks, Crowds, and Markets:  Reasoning About a Highly Connected World](http://www.cs.cornell.edu/home/kleinber/networks-book/) by David Easley and Jon Kleinberg
-- [ Networks: An Introduction ](http://www-personal.umich.edu/~mejn/networks-an-introduction/) by M. E. J. Newman
+- [Networks, Crowds, and Markets:  Reasoning About a Highly Connected World](http://www.cs.cornell.edu/home/kleinber/networks-book/) by David Easley and Jon Kleinberg
+- [Networks: An Introduction ](http://www-personal.umich.edu/~mejn/networks-an-introduction/) by M. E. J. Newman
 - [Social and Economic Networks](http://press.princeton.edu/titles/8767.html) by Matthew O. Jackson
 - [The Structure and Dynamics of Networks](http://press.princeton.edu/titles/8114.html) by Mark Newman, Albert-László Barabási, & Duncan J. Watts
 - [Linked: is about How Everything is Connected to Everything Else and What It means for Business, Science, and Everyday Life](http://barabasilab.com/LinkedBook/) by Albert-László Barabási
@@ -40,6 +41,19 @@ Ganz am Ende, wenn alles schon fertig ist!
 [PostGIS](http://postgis.org/)
 [PostgreSQL](http://www.postgresql.org/)
 [PGRouting Manual](http://docs.pgrouting.org/2.0/en/pgRoutingDocumentation.pdf)
+
+### Gephi
+[Youtube Playlist](https://www.youtube.com/playlist?list=PLedvCUusOD_npdPtovJpErTXx0ifkgIeQ)
+
+### GRASS
+
+
+### Connecting Software
+[GRASS and Octave](http://grasswiki.osgeo.org/wiki/GRASS_and_Octave)
+[GRASS and Python](http://grasswiki.osgeo.org/wiki/GRASS_and_Python)
+[GRASS and Shell](http://grasswiki.osgeo.org/wiki/GRASS_and_Shell)
+[QGIS GRASS Cookbook](http://grasswiki.osgeo.org/wiki/QGIS_GRASS_Cookbook)
+[GRASS und SAGA]()
 
 
 
