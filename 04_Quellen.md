@@ -9,6 +9,7 @@
 - [Creative Commons](https://creativecommons.org/)
 - [Open Definition](http://opendefinition.org/)
 - [Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/)
+- [Daten online stellen](http://www.qgiscloud.com/)
 
 ## Tutorials
 [PGRouting Dijkstra](http://pgrouting.org/docs/1.x/dijkstra.html)
@@ -19,6 +20,8 @@
 [Funktionsweise Dijkstra Algorithmus](https://www.youtube.com/watch?v=Q5ebFH8Yho4)
 [OpenStreetMap mit QGis](http://www.qgis.org/en/docs/user_manual/osm/openstreetmap.html)
 [GEOSTAT 2011 Summer School in Landau ](http://www.uni-koblenz-landau.de/landau/fb7/umweltwissenschaften/landscape-ecology/Teaching/geostat)
+[Karten erstellen mit Qgis](http://www.lib.uwaterloo.ca/locations/umd/documents/QGISGuide_Qian.pdf)
+
 
 ## Literatur
 
@@ -58,6 +61,7 @@
 
 
 ## Dateiformate
+[Erklärung unterschiedlichster Dateiformate unter 4.2.](http://www.ogd.cc/diplomarbeit/)
 [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index)
 [SQLite](https://www.sqlite.org/)
 [Shapefile](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf): Das Dateiformat Shapefile

@@ -16,6 +16,8 @@ Stil: was soll wo rein, was nicht. Wo soll man auf andere Quellen verlinken.
 
 
 
-
+## Konvention - Dateiname
+- Wörter trennen mit Minus
+- Semantische Unterschiede mit Unterstrich
 
 
