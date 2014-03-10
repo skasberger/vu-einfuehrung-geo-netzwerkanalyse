@@ -14,17 +14,91 @@ Kurzer einleitender Text, was in der Markdown file gemacht wird.
 ## Graphen kombinieren
 ASFINAG mit OSM und Straßen in => Wien!
 
+## Methoden der Netzwerkanalyse
+Mit Methoden der Netzwerkanalyse können verschiedene Fragestellungen behandelt werden.
+Hier sollen nun die XX bekanntesten Analysewerkzeuge vorgestellt werden.
+Dazu gehören:
+
+* [Shortest Path](#ShortestPath)
+* [Closest Facility](#ClosestFacility)
+* [Service Area](#ServiceArea)
+
+Diese Methoden können mit verschiedenen FOSS-GIS Programmen durchgeführt werden.
+Dazu gehören:
+
+* [QGis](#QGis)
+* [Grass](#Grass)
+* [PGRouting](#PGRouting)
 
 ## Shortest Path
+*Shortest Path* berechnet die kürzeste Distanz zwischen zwei Punkten (Knoten).
 
-Dykstra
+**QGIS: Straßengraph-Plugin**
+
+QGIS 2 bietet dabei das [Straßengraph-Plugin](http://qgis.org/de/docs/user_manual/plugins/plugins_road_graph.html) (engl. Road-Graph Plugin).
+
+![Picture Road Graph](http://example.com/myimage.jpg
+
+Für die Durchführung der Analyse muss zuerst die Einstellung angepasst werden. Unter Vektor - Straßengraph-Plugin können gewisse Einstellungen - z.B. Impendanzen wie Geschwindigkeit und Richtungseinschränkung - mit Voreinstellungen (alle Einstellungen gelten für den gesamten Layer) und mit vordefinierten Feldern (Feld/Spalte im Layer für Geschwindigkeit und Richtung) bearbeitet werden. Ebenso kann die Topologietoleranz verändert werden, d.h. ...
+
+***
+http://www.qgis.org/en/docs/training_manual/vector_analysis/network_analysis.html*
+If, on clicking Calculate, you see an error stating that a path could not be found, make sure that the roads you digitized actually meet each other. If they’re not quite touching, either fix them by modifying the features, or set the Topology tolerance in the plugin’s settings. If they’re passing over each other without intersecting, use the Split features tool to “split” roads at their intersections:
+ActionSplitFeatures
+
+Remember that the Split features tool only works in edit mode on selected features, though!
+***
+
+Die Durchführung der Analyse verlangt nur einen Start- und Endpunkt, sowie die Auswahl ob nach Länge oder Zeit gerechnet werden soll.
+Die Auswahl der Zeit erfordert die Einstellung einer Geschwindigkeitsangabe, die im Menü global für alle Straßen gilt oder aus einem Spalte in der Tabelle ausgelesen werden kann (sofern der Layer über so eine Spalte verfügt).
+Nach dem die Einstellung gesetzt wurden, kann die Route berechnet werden.
+
+**GRASS: v.net.path**
+
+Verweis auf die Schritte zur Vorbereitung des Netzwerkes
+
+Grass-Befehl
+Grafik
+
+**GRASS: d.path**
+
+
+
+Verweis auf die Schritte zur Vorbereitung des Netzwerkes
+
+Grass-Befehl
+Grafik
+
+
+**PG-Routing**
+
+http://anitagraser.com/2011/02/07/a-beginners-guide-to-pgrouting/
+
+Verweis auf Datenbank Vorbereitung
+
+Analyse-Tool Erklären
+
+SQL Befehl
+
+SQL Befehl erklären
 
 
 ## Closest Facility
+**GRASS: v.net.distance**
+v.net distance sucht für mehrere Punkte nächsten Einrichtungen
+
+**GRASS: v.net.alloc**
+http://www.ing.unitn.it/~grass/docs/tutorial_64_en/htdocs/esercitazione/network_analysis/node6.html
+
+**PG-Routing**
 
 
-## Einzugsbereich (Service Area)
+## Einzugsbereich - Service Area
 
+**GRASS: v.net.iso**
+http://www.ing.unitn.it/~grass/docs/tutorial_64_en/htdocs/esercitazione/network_analysis/node5.html
+
+**PG-Routing**
 
 
 
