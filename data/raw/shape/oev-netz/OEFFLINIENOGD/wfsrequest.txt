@@ -1,0 +1,1 @@
+http://geoserverogd.nsgslb.magwien.gv.at/ogd/ows?service=WFS&request=GetFeature&version=1.1.0&srsName=EPSG:4326&outputFormat=shape-zip&typeName=ogdwien:OEFFLINIENOGD
