@@ -14,7 +14,8 @@ Stil: was soll wo rein, was nicht. Wo soll man auf andere Quellen verlinken.
 - **03_Netzwerkanalyse.md**: 
 - **04_Lehrveranstaltung.md**: 
 
-
+## DATENBANK
+- tables mit _ trennen. kann keine - als trennzeichen von wörtern, zuerst geographie, dann bezeichnung, dann semantik, dann spez. unterscheidungen
 
 ## Konvention - Dateiname
 - Wörter trennen mit Minus

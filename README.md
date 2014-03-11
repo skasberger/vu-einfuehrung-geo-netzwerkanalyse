@@ -27,6 +27,12 @@ Sprache: Deutsch
 
 **Verwendete Datensets**
 
+Am besten via Shell Script runterladen:
+```
+sh code/shell/fetch-data.sh
+```
+
+
 
 ## Aufbau Skriptum
 
@@ -64,23 +70,5 @@ Alle Dokumentations Files und deren Struktur
 Um was geht es in dem Abschnitt 
 
 ### 4. Quellen
-
-## ToDo
-- Möglichst viele Fragen auf Stackoverflow stellen und auf Antworten verweisen
-- die Ergebnisse sehr breit verteilen: Leute fragen, wo man das sonst noch posten oder aussenden könnte
-- recherche machen: Tutorials, workshop, youtube, papers, books, bilder, podcasts, tv shows, etc.
-- mitsamt all den anderen projekten: genaue aufteilung, was wo gemacht werden soll und in welchem Umfang => zentrales Repo mit *.md zu jeder software und Themenbereich, Aufgaben und Einführung ins Thema in den LV repos.
-- wo kann ich mir attribute in raster und vektor layer ansehen?
-- Alleinstellungs Merkmal bei den Skripten, Repos überlegen und darauf abzielen; raster2vector, vector2raster, vector2network, DGM, DOM, 
-- Post: Einführung in GRASS GIS: Quellen, wichtige Befehle und Schritte, Installation, Hilfe, etc.
-- eine GRASS GIS Location, wo alle Daten drinnen sind erstellen
-- Lizenzauszeichnungen bei den Daten und Dokumenten
-- Encoding fixen
-- http://wiki.osgeo.org/wiki/Public_Geospatial_Data_Project ansehen
-- OSM Daten: Wege Öffis, Haltestellen, Knoten Straße, 
-- Ergebnis an SGeo Edu Discuss Liste weiterleiten
-- Wiki Pages updaten: 100mg GiHub Limit (-> Workflow Auswirkungen!), 
-- Shell script zum Download von allen Datensets schreiben
-
-
+http://openscienceasap.org/education/courses/se-networks/
 

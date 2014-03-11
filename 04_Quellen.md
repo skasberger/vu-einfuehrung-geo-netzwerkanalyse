@@ -12,16 +12,16 @@
 - [Daten online stellen](http://www.qgiscloud.com/)
 
 ## Tutorials
-[PGRouting Dijkstra](http://pgrouting.org/docs/1.x/dijkstra.html)
-[PGRouting Algorithms](http://workshop.pgrouting.org/chapters/shortest_path.html)
-[Using graphviz to draw graphs](http://avedo.net/338/using-graphviz-to-draw-graphs/)
-[Setup PostGis in Ubuntu 13.10](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS21UbuntuPGSQL93Apt)
-[A quick tutorial to SpatiaLite - a Spatial extension for SQLite](http://www.gaia-gis.it/gaia-sins/spatialite-tutorial-2.3.1.html)
-[Funktionsweise Dijkstra Algorithmus](https://www.youtube.com/watch?v=Q5ebFH8Yho4)
-[OpenStreetMap mit QGis](http://www.qgis.org/en/docs/user_manual/osm/openstreetmap.html)
-[GEOSTAT 2011 Summer School in Landau ](http://www.uni-koblenz-landau.de/landau/fb7/umweltwissenschaften/landscape-ecology/Teaching/geostat)
-[Karten erstellen mit Qgis](http://www.lib.uwaterloo.ca/locations/umd/documents/QGISGuide_Qian.pdf)
-
+- [PGRouting Dijkstra](http://pgrouting.org/docs/1.x/dijkstra.html)
+- [PGRouting Algorithms](http://workshop.pgrouting.org/chapters/shortest_path.html)
+- [Using graphviz to draw graphs](http://avedo.net/338/using-graphviz-to-draw-graphs/)
+- [Setup PostGis in Ubuntu 13.10](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS21UbuntuPGSQL93Apt)
+- [A quick tutorial to SpatiaLite - a Spatial extension for SQLite](http://www.gaia-gis.it/gaia-sins/spatialite-tutorial-2.3.1.html)
+- [Funktionsweise Dijkstra Algorithmus](https://www.youtube.com/watch?v=Q5ebFH8Yho4)
+- [OpenStreetMap mit QGis](http://www.qgis.org/en/docs/user_manual/osm/openstreetmap.html)
+- [GEOSTAT 2011 Summer School in Landau ](http://www.uni-koblenz-landau.de/landau/fb7/umweltwissenschaften/landscape-ecology/Teaching/geostat)
+- [Karten erstellen mit Qgis](http://www.lib.uwaterloo.ca/locations/umd/documents/QGISGuide_Qian.pdf)
+- [The ELOGeo Repository](http://www.openeducationweek.org/the-elogeo-repository/)
 
 ## Literatur
 
@@ -71,7 +71,6 @@
 [Straßengraph Wien](https://open.wien.at/site/datensatz/?id=1039ed7e-97fb-435f-b6cc-f6a105ba5e09): [WFS GeoJSON Knoten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENKNOTENOGD&srsName=EPSG:4326&outputFormat=json), [WFS GeoJSON Kanten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENGRAPHOGD&srsName=EPSG:4326&outputFormat=json)
 [Straßengraph ASFINAG](https://open.wien.at/site/datensatz/?id=db389f75-56c3-4d61-9bb7-1f1c675edeaf): [WFS GeoJSON Knoten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:ASFINAGKNOTENOGD&srsName=EPSG:4326&outputFormat=json) & [WFS GeoJSON Kanten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:ASFINAGSTRASSEOGD&srsName=EPSG:4326&outputFormat=json)
 [U-Bahnnetz Bestand](https://open.wien.at/site/datensatz/?id=2d0e9a21-fa5f-441d-948a-fe97a453a827): [WFS GeoJSON](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:UBAHNOGD,ogdwien:UBAHNHALTOGD&srsName=EPSG:4326&outputFormat=json)
-BILD
 [Öffentliches Verkehrsnetz - Haltestellenpunkte](https://open.wien.at/site/datensatz/?id=f1f6f15d-2faa-4b62-b78b-80599dd1c66e): [WFS GeoJSON](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&srsName=EPSG:4326&outputFormat=json&typeName=ogdwien:OEFFHALTESTOGD)
 [Öffentliches Verkehrsnetz - Liniennetz](https://open.wien.at/site/datensatz/?id=36a8b9e9-909e-4605-a7ba-686ee3e1b8bf): [WFS GeoJSON](http://data.wien.gv.at/daten/wfs?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:OEFFLINIENOGD&srsName=EPSG:4326&outputFormat=json)
 
