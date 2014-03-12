@@ -5,14 +5,17 @@
 
 ## Einleitung
 
-Kurzer einleitender Text, was in der Markdown file gemacht wird.
+Hier wird nun beschrieben, was mit den entsprechend aufbereiteten Daten innerhalb einer Vektor-Netzwerkanalyse gemacht werden kann.
+Die hier vorgestellten Methoden behandeln einige Analysemethoden im Bereich des Routing auf Basis von Verkehrsnetze.
+Dazu werden einige Analysen mit gängigen Tools von QGIS und GRASS mit jeweiligen Erweiterung durchgeführt und es wird auf weiterführende Literatur verwiesen.
+Infos zur Vorbereitung der Daten sind im File [zur Datenerstellung und -Aufbereitung](02_Daten-erstelle-und-aufbereiten.md) zu finden.
 
 ## Daten modellieren und analysieren
 
 ## Daten präsentieren
 
 ## Vorbereitung
-02_Daten-erstelle-und-aufbereiten.md ausführen
+ ausführen
 
 - WMS und OpenStreetMap als Hintergrundlayer importieren => da habe ich schon mal was dazu gemacht!
 
@@ -37,14 +40,14 @@ Dazu gehören:
 
 **QGIS: Straßengraph-Plugin**
 
-QGIS 2 bietet dabei das [Straßengraph-Plugin](http://qgis.org/de/docs/user_manual/plugins/plugins_road_graph.html) (engl. Road-Graph Plugin).
+QGIS 2 bietet dabei das [Straßengraph-Plugin](http://qgis.org/de/docs/user_manual/plugins/plugins_road_graph.html) (engl. Road-Graph Plugin) on the fly. Bei älteren Versionen muss es über die Python-Erweiterungen dazu installiert werden.
 
 ![Picture Road Graph](http://example.com/myimage.jpg
 
-Für die Durchführung der Analyse muss zuerst die Einstellung angepasst werden. Unter Vektor - Straßengraph-Plugin können gewisse Einstellungen - z.B. Impendanzen wie Geschwindigkeit und Richtungseinschränkung - mit Voreinstellungen (alle Einstellungen gelten für den gesamten Layer) und mit vordefinierten Feldern (Feld/Spalte im Layer für Geschwindigkeit und Richtung) bearbeitet werden. Ebenso kann die Topologietoleranz verändert werden, d.h. ...
+Für die Durchführung der Analyse muss zuerst die Einstellung angepasst werden. Unter Vektor - Straßengraph-Plugin können gewisse Einstellungen - z.B. Impendanzen wie Geschwindigkeit und Richtungseinschränkung - mit Voreinstellungen (alle Einstellungen gelten für den gesamten Layer) und mit vordefinierten Feldern (Feld/Spalte im Layer für Geschwindigkeit und Richtung) bearbeitet werden. 
+Sollten sich ... nicht berechnen lassen und das Plugin die Meldung zurückgibt, dass der Pfad nicht gefunden werden konnte, kann das einerseits daran liegen, dass es keinen Pfad gibt oder andererseits auch daran, dass die Kanten nicht richtig verbunden sind. Hier kann die Veränderung der Topologietoleranz (im Einstellungsfenster) helfen, d.h. wenn es im Netzwerk-Lücken gibt (z.B. nicht verbundene Kanten), können mit der Toleranz diese Lücken ausgeglichen werden. Es sollte beachtet werden, dass die Toleranz nicht zu großzügig angegeben wird, da es sonst zu fehlerhaften Auswertung kommen kann, beispielsweise durch die Schaffung einer Verbindung, wo sich keine befindet. Eine genauere Anleitung mit Screenshot und eine Info zur  Fehlerbehebung bietet die [QGIS-Dokumentation](http://www.qgis.org/en/docs/training_manual/vector_analysis/network_analysis.html) Abhilfe.
 
-***
-http://www.qgis.org/en/docs/training_manual/vector_analysis/network_analysis.html*
+
 If, on clicking Calculate, you see an error stating that a path could not be found, make sure that the roads you digitized actually meet each other. If they’re not quite touching, either fix them by modifying the features, or set the Topology tolerance in the plugin’s settings. If they’re passing over each other without intersecting, use the Split features tool to “split” roads at their intersections:
 ActionSplitFeatures
 

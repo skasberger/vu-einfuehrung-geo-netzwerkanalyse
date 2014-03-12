@@ -377,16 +377,26 @@ https://en.wikipedia.org/wiki/Markdown
 [GitHub Flavoured Markdown](http://github.github.com/github-flavored-markdown/)
 
 ### Open Data Repositories
-[Open Data](https://de.wikipedia.org/wiki/Open_data) bedeutet die freie Verfügbar- und Nutzbarkeit von, meist öffentlichen, Daten. Sie beruht auf der Annahme, dass vorteilhafte Entwicklungen unterstützt werden wie Open Government, wenn Daten für jedermann frei zugänglich gemacht werden und damit mehr Transparenz und Zusammenarbeit ermöglichen. Dazu verwenden die Ersteller Lizenzmodelle, die auf Copyright, Patente oder andere proprietäre Rechte weitgehend verzichten. Open Data ähnelt dabei zahlreichen anderen „Open“-Bewegungen, wie zum Beispiel Open Source, Open Content, Open Access, Open Education und ist eine Voraussetzung für Open Government.
+[Open Data](https://de.wikipedia.org/wiki/Open_data) bedeutet die freie Verfügbar- und Nutzbarkeit von, meist öffentlichen, Daten. Sie beruht auf der Annahme, dass vorteilhafte Entwicklungen unterstützt werden wie Open Government, wenn Daten für jedermann frei zugänglich gemacht werden und damit mehr Transparenz und Zusammenarbeit ermöglichen. Dazu verwenden die Ersteller Lizenzmodelle, die auf Copyright, Patente oder andere proprietäre Rechte weitgehend verzichten. Open Data ähnelt dabei zahlreichen anderen „Open“-Bewegungen, wie zum Beispiel Open Source, Open Content, Open Access oder Open Education und ist eine Voraussetzung für Open Government.
 REF: Wikipedia
+Open Data Repositories werden häufig mit der "data" Bezeichnung in der URL angegeben. Eine zentrale Stelle, die Daten von mehreren OGD-Portalen sammeln ist unter [data.gv.at](http://data.gv.at/) abrufbar. Nicht nur Städte und Länder geben Teile ihrer Daten frei, auch Ministerien, Gemeinden und staatsnahe Betriebe sind darunter.
 
 BILD
 
 ### OGD Graz
+Das [OGD-Portal der Stadt Graz](http://data.graz.gv.at/) bietet statistische und geographische sowie Verwaltungsdaten an.
+Dazu geh"oren beispielsweise EinwohnerInnen- oder Finanzstatistiken in Form von CSV-Daten oder auch Karten mit Standorten in verschiedenen von GI-Systemen lesbaren Dateiformaten wie Shape oder WMS.
+Der verwendete Zeichensatz ist bei den meisten Daten *'utf8'*.
+
+BILD
 
 ### OGD Steiermark
+Das [OGD-Portal des Landes Steimerark](http://data.steiermark.at/) ist ähnlich aufgebaut wie das OGD-Portal der Stadt Graz. Zeichensätze sind allerdings vorwiegend in *'latin-1'* aka *'ISO-8859-1'*.
+
+BILD
 
 ### OGD Wien
+Das [OGD-Portal der Stadt Wien](http://data.wien.gv.at/) bietet derzeit das größte Open Data Repository. Was es gegenüber den anderen OGD-Portalen hervorhebt, ist beispielsweise die Verfügbarkeit von Daten zu öffentlichen Verkehrsmitteln und einigen Planungsdaten (z.B. geplante ÖV-Netzwerkerweiterung). Ebenso gibt es ein breites Sortiment an Daten wichtiger Standorte der öffentlichen Versorgung. Der verwendete Zeichensatz ist bei den meisten Daten *'utf8'*.
 
 BILD
 
