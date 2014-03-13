@@ -67,7 +67,9 @@ Alle Dokumentations Files und deren Struktur
 - Importieren und aufbereiten von Daten aus dem OGD Portal der Stadt Wien
 
 ### 3. Netzwerkanalyse (Verkehr)
-Um was geht es in dem Abschnitt 
+- Erklärung von Tools zur Netzwerkanalyse
+- Durchführen der Shortest Path, Closest Facility und Service Area Netzwerkanalyse mit ...
+- 
 
 ### 4. Quellen
 http://openscienceasap.org/education/courses/se-networks/

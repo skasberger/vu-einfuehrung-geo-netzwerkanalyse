@@ -57,7 +57,7 @@ mit lizenz text verpacken und upload (github dateigrößen limit 100mb)
 
 [Map Features](http://wiki.openstreetmap.org/wiki/Map_Features)
 
-Attribut import bei Polylinien:
+Attribut-Import bei Polylinien:
 - [highway](http://wiki.openstreetmap.org/wiki/Key:highway)
 - [cycleway](http://wiki.openstreetmap.org/wiki/Key:cycleway)
 - noch weitere?
@@ -120,20 +120,28 @@ keine minus zeichen zum trennen sondern underbar, sonst postgresql fehler.
 
 
 ### Routingfähiges Netzwerk in pgRouting erstellen
-**Erstellen eines network graphs, wo alle kanten sämtlicher netzwerke drinnen sind**
-- auszeichnen der typen via attribut
-- schneidungen von linien sind nicht automatisch nodes. 
-- wie bekomme ich haltestellen rein, so dass nicht jeder knoten für transfer möglich ist (ubahn, oev)
+**Erstellen eines Netzwerkgraphen (network graph), wo alle Kanten sämtlicher Netzwerke drinnen sind**
+- Auszeichnen der Typen via Attribut
+- Überschneidungen von Linien stelleb nicht automatisch Knoten dar, z.B. bei Brücken
+- Wie bekomme ich haltestellen rein, so dass nicht jeder knoten für transfer möglich ist (ubahn, oev)
 
 **Konnektivität herstellen**
-
+- Multimodales Netzwerk - Verbindung mit mehreren Verkehrsmodi (ÖV, zu Fuß, Rad, Auto)
+- Knoten stellen dem entsprechend dar: Fahrradständer, Abstellplätze, Füßgängerübergänge, Ausweichen für Busse, Kartenverkaufsstellen
+- Stützpunkte - Anbindung von Kanten an lagegleichen Stützpunkten, z.B. Kreuzungen
+- Endpunkte:  Kanten können nur an Endpunkten an das Netz angebunden werden; z.B. zur Definition von Unter- oder Überführungen (Brücken, Tunnel); „kreuzungsfrei“
+- in Multimodalen Netzwerken können Hierachien eingebaut werden, welche bei der Analyse berücksichtigt werden können. Hierarchien haben massiven Einfluss auf das Ergebnis, z.B. die bevorzugte Wahl von Autobahn oder Gemeindestraßen.
 
 **Kosten je nach Kategorie**
+Kosten wirken sich wie Impedanzen auf die zurückzulegende Distanz und die dafür benötigte Zeit aus. Zu den Kosten gehören beispielsweise Gehzeit, Treibstoffverbrauch, Entfernung, Bedarf (wie viele Personen steigen an einer Haltestelle durchschnitt-lichein, Schneemenge, die geräumt werden muss).
 
 
 **Impedanzen**
+Impedanzen sind Einschränkungen, beispielsweise Geschwindigkeitsbeschränkungen, Einbahnen, Verbote (Fahrverbot, Gehverbot, Abbiegeverbot, Fahrverbot zu gewissen Uhrzeiten), Höheneinschr"ankungen, Gefahrengüter oder Baustellen. Sie werden über Verkehrstafeln vermittelt.
+Wert ist von der Kantenlänge abhängig (Aufteilung!)
 
-
+**Dekriptoren**
+Deskriptoren sind jene Felder, die weitere Information über die jeweilige Kante bereitstellen. Im Verkehr sind das beispielsweise Geschwindikeiten, Anzahl der Fahrspuren, Beschaffenheit der Straße,...Sie gelten für die gesamte Kantenlänge.
 
 
 ## Häufige Fehler
