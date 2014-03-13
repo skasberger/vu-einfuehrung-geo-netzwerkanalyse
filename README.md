@@ -68,8 +68,7 @@ Alle Dokumentations Files und deren Struktur
 
 ### 3. Netzwerkanalyse (Verkehr)
 - Erklärung von Tools zur Netzwerkanalyse
-- Durchführen der Shortest Path, Closest Facility und Service Area Netzwerkanalyse mit ...
-- 
+- Durchführen der Shortest Path, Closest Facility und Service Area Netzwerkanalyse
 
 ### 4. Quellen
 http://openscienceasap.org/education/courses/se-networks/
