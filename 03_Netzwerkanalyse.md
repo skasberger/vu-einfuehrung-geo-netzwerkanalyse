@@ -6,9 +6,11 @@
 ## Einleitung
 
 Hier wird nun beschrieben, was mit den entsprechend aufbereiteten Daten innerhalb einer Vektor-Netzwerkanalyse gemacht werden kann.
-Die hier vorgestellten Methoden behandeln einige Analysemethoden im Bereich des Routing auf Basis von Verkehrsnetze.
+Die hier vorgestellten Methoden behandeln einige Analysen im Bereich des Routing auf Basis von Verkehrsnetzen.
 Dazu werden einige Analysen mit gängigen Tools von QGIS und GRASS mit jeweiligen Erweiterung durchgeführt und es wird auf weiterführende Literatur verwiesen.
 Infos zur Vorbereitung der Daten sind im File [zur Datenerstellung und -Aufbereitung](02_Daten-erstelle-und-aufbereiten.md) zu finden.
+
+Weitere Materialien und Informationen erfährt ihr auf der [Übersichts-Seite](http://openscienceasap.org/education/courses/vu-einfuehrung-geo-netzwerkanalyse/)
 
 ## Daten modellieren und analysieren
 
@@ -36,7 +38,7 @@ Dazu gehören:
 * [PGRouting](#PGRouting)
 
 ## Shortest Path
-*Shortest Path* berechnet die kürzeste Distanz zwischen zwei Punkten (Knoten).
+Im den kürzesten Pfad zwischen zwei Punkten (Nodes, Knoten) zu berechnen, gibt es verschiedene Tools.
 
 **QGIS: Straßengraph-Plugin**
 
@@ -88,23 +90,17 @@ SQL Befehl
 SQL Befehl erklären
 
 ## Einzugsbereich (Service Area)
-Nach Vorlage aus Tutorial [Creating Catchment Areas with pgRouting and QGIS](http://anitagraser.com/2011/02/09/creating-catchment-areas-with-pgrouting-and-qgis/) von Anita Graser. [Für mehrere Targets](http://anitagraser.com/2011/02/12/drive-time-isochrones/)
+Der *Einzugsbereich* (auch Service Area) ist eine Zone um einen Knoten, der auf Basis von Kosten und Impedanzen berechnet wird. Alle Punkte innerhalb dieser Zone können den zentralen Knoten in dem gegebenen Zeitintervall erreichen. Es können über mehrere Zeitintervalle mehrere Zonen gezogen werden. Die Visualisierung von Einzugsbereichs zeigt beispielsweise, welche Gebiete einer Stadt gut erreichbar sind und welche nicht. Dazu gehören Erreichbarkeiten und Reichweiten.
+
+Nach Vorlage aus Tutrial [Creating Catchment Areas with pgRouting and QGIS](http://anitagraser.com/2011/02/09/creating-catchment-areas-with-pgrouting-and-qgis/) von Anita Graser. [Für mehrere Targets](http://anitagraser.com/2011/02/12/drive-time-isochrones/)
 [Begrenzte Distanz](http://anitagraser.com/2011/05/13/catchment-areas-with-pgrouting-driving_distance/)
 [Erzeugen einer Rasterdatei](http://anitagraser.com/2011/07/24/infrastructure-coverage-based-on-open-data/)
 
 das ganze mit beliebigen POIs machen: Apotheken, etc... => Heatmap, Isochronen oder Klassifikationen der Punkte erstellen.
 
-## Closest Facility
-**GRASS: v.net.distance**
-v.net distance sucht für mehrere Punkte nächsten Einrichtungen
+BILD
+Service Area
 
-**GRASS: v.net.alloc**
-http://www.ing.unitn.it/~grass/docs/tutorial_64_en/htdocs/esercitazione/network_analysis/node6.html
-
-**PG-Routing**
-
-
-## Einzugsbereich - Service Area
 
 **GRASS: v.net.iso**
 http://www.ing.unitn.it/~grass/docs/tutorial_64_en/htdocs/esercitazione/network_analysis/node5.html
@@ -113,6 +109,19 @@ http://www.ing.unitn.it/~grass/docs/tutorial_64_en/htdocs/esercitazione/network_
 
 
 ## Location - Allocation
+
+
+## Closest Facility
+*Closet Facility* ist eine Analyse, die von einem gegebenen Startpunkt den nächsten von mehreren gegebenen Endpunkten sucht. Als Startpunkt kann z.B. ein Unfallort dienen, die Endpunkte sind Krankenhäuser, gesucht wird das nächste Krankenhaus.
+Bei der Analyse können Impedanzen festgelegt und die besten Routen, Fahrkosten und Wegbeschreibungen mit z.B. Shortest Path ermittelt werden.
+
+**GRASS: v.net.distance**
+v.net distance sucht für mehrere Punkte nächsten Einrichtungen
+
+**GRASS: v.net.alloc**
+http://www.ing.unitn.it/~grass/docs/tutorial_64_en/htdocs/esercitazione/network_analysis/node6.html
+
+**PG-Routing**
 
 
 

@@ -1,4 +1,4 @@
-# TODO
+QDL# TODO
 - Shortest Path, Communities und Centralities recherchieren
 - Zitationen einfügen
 - Bilder erstellen und einbinden => David
@@ -24,35 +24,45 @@ Die verwendeten Begriffe für diese beiden Elemente sind meist je nach Disziplin
 BILD
 grundkonzept graph
 
-Die Netzwerktheorie beschäftigt sich mit großen Netzwerken, die mit dem Aufkommen von Informations- und Kommunikationstechnologien (ICT) immer mehr an Relevanz bekommen. Der mathematische Unterbau dazu ist die Graphentheorie. !ZITAT!
+Die Netzwerktheorie beschäftigt sich mit großen Netzwerken, die mit dem Aufkommen von Informations- und Kommunikationstechnologien (ICT/IKT) immer mehr an Relevanz bekommen. Der mathematische Unterbau dazu ist die Graphentheorie. !ZITAT!
 
 BILD
 großer Graph
 
+Eulers **[Königsberger-Brückenproblem](https://de.wikipedia.org/wiki/K%C3%B6nigsberger_Br%C3%BCckenproblem)** ist ein bekanntes Problem der Graphentheorie.
+Dieses  besteht darin, wie jede Kante (im Beispiel 7 Brücken) nur einmal passiert werden muss, um am Ende wieder zum Ausgangspunkt zu gelangen. Daraus lassen sich zwei weitere Begriffe ableiten.
+![Euler-Brückenproblem](https://upload.wikimedia.org/wikipedia/commons/f/f1/Koenigsberger_bruecken_graph.svg)
+
+* *Eulerkreis*: In einem zusammenhängenden Graphen existiert genau dann ein Eulerkreis, wenn alle Knoten geraden Grad besitzen.
+
+* *Eulerweg*: In einem zusammenhängenden Graphen existiert genau dann ein Eulerweg, wenn zwei Knoten einen ungeraden Grad haben
+
+
 ### Arten von Graphen
 Es gibt verschiedene Unterscheidungsmerkmale für Graphen/Netzwerke, abhängig von deren Struktur und Eigennschaften.
 
-**Directed/Undirected**
+**Directed/Undirected:** 
 Kanten können eine Richtung haben (directed) oder auch keine (undirected), wodurch die Beziehung in beide Richtungen gleich ist, also symmetrisch. Typische ungerichtete Netzwerke sind Links auf Websites. Freundschaften sind zumeist symmetrisch. Um die Richtung zu signalisieren, sind gerichtete Kanten durch einen Pfeil dargestellt.
 
-BILD 
-Gerichteter Graph
+![Gerichteter Graph](pictures/gerichteter_graph.png)
+![Ungerichteter Graph](pictures/ungerichteter_graph.png)
 
-**Gewichtet/Ungewichtet**
+*Gerichteter Graph (links), ungerichteter Graph (rechts)*
+
+**Gewichtet/Ungewichtet:**
 Die Kanten können auch eine Gewichtung haben, also das Verhältnis kann quantitativ bemessen werden. Wie oft haben sich zwei Menschen getroffen oder wie groß ist die Bandbreite einer Datenverbindung. Um so höher die Zahl, desto höher ist die Gewichtung des Verhältnisses.
 
 BILD
 
-**Multimodale Graphen**
-Es können zwischen einem Paar von Knoten auch mehrere verschiedene Kanten bestehen. Ein Netzwerk mit diesen Eigenschaften wird multimodal genannt und ist ins besondere in der Mobilitätsforschung weit verbreitet.
+**Multimodale Graphen:**
+Es können zwischen einem Paar von Knoten auch mehrere verschiedene Kanten bestehen. Ein Netzwerk mit diesen Eigenschaften wird multimodal genannt und ist insbesondere in der Mobilitätsforschung (in Form von unterschiedlichen Verkehrsmitteln) weit verbreitet.
 
-BILD
-multimodaler graph
+![Multimodaler Graph](pictures/multimodal_graph.png)
 
-**Bipartite**
+**Bipartite:**
 Eher wenig Bedeutung in der Geographie.
 
-Bipartite Graphen sind eine spezielle Klasse von Netzwerken, bei denen die Kanten in zwei Mengen, X und Y, unterteilt sind und wo nur Verbindungen zwischen zwei Knoten aus verschiedenen Sets bestehen \citep{easley_networks_2010}. Die Kanten können gerichtet/ungerichtet oder gewichtet/ungewichtet sein.
+Bipartite Graphen sind eine spezielle Klasse von Netzwerken, bei denen die Kanten in zwei Mengen (X und Y) unterteilt sind und wo nur Verbindungen zwischen zwei Knoten aus verschiedenen Sets bestehen \citep{easley_networks_2010}. Die Kanten können gerichtet/ungerichtet oder gewichtet/ungewichtet sein.
 
 BILD
 konzept bipartite
@@ -61,6 +71,7 @@ Bipartite Netzwerke haben in der Mobilitätsforschung kaum Verwendung.
 
 **3D**
 
+  
 ### Shortest Path
 
 Shortest Path bezeichnet Algorithmen, die die kürzeste Verbindung zwischen zwei Knoten sucht und somit die zentrale Aufgabe zum Lösen eines Routing-Problems ist. Es gibt verschieden Arten (Algorithmen) solche Shortest Path Probleme zu lösen. Ein sehr weit verbreiteter ist der Dijkstra Algorithmus ([Video](https://www.youtube.com/watch?v=Q5ebFH8Yho4)). Weitere sind [A*](), [A*]() und [A*]().
@@ -68,13 +79,14 @@ Shortest Path bezeichnet Algorithmen, die die kürzeste Verbindung zwischen zwei
 ?? können alle mit impedanzen, also mit gewichtungen arbeiten ??
 
 ### Centralities
-#### Degree
+#### Degree (Grad)
+Der Grad eines Knoten ist die Anzahl an Kanten, die von ihm ausgehen.   
 
 #### Betweeness
-
+wie beeinflusst ein Akteur die Beziehung zwischen zwei anderen Akteuren
 
 #### Closeness
-
+wie nahe steht ein Akteur zum anderen
 
 ### Community Detection
 
@@ -86,9 +98,11 @@ Eine verbundene Komponente eines Graphen ist eine Untermenge der Knoten, wo es 1
 
 
 ### Verkehr
-Evaluatoren: werden verwendet, um Attribute der Quelldaten den Netzwerkelementen zuzuweisen (z.B. verschiedene Angaben zu Kreuzungen (Wartezeit) werden aus einem jeweiligen Shape hinzugefügt; ebenso falls es unterschiedliche Einschränkungen gibt; auch Fahrzeit)
+**Evaluatoren:** werden verwendet, um Attribute der Quelldaten den Netzwerkelementen zuzuweisen (z.B. verschiedene Angaben zu Kreuzungen (Wartezeit) werden aus einem jeweiligen Shape hinzugefügt; ebenso falls es unterschiedliche Einschränkungen gibt; auch Fahrzeit)
 
-Euler Problem
+
+
+
 
 Transport: Konnektivität, Kosten, Hierarchien, Turns, Schnellste vs kürzeste Route, Impedanzen: Einbahnen, Abbiegeverbote, Höhenbeschränkungen, Gewichtsbeschränkungen, Gefahrengüter, Nachtfahrverbote, Baustellen
 Kosten
@@ -137,8 +151,7 @@ Open Science
 
 Somit sind alle Inhalte, sofern nicht anders angegeben, nach den Vorgaben der [Open Definition](http://opendefinition.org/) lizenziert. Texte und Bilder sind unter der [Creative Commons BY](https://creativecommons.org/licenses/by/3.0/at/) lizenziert. 
 
-BILD
-Creative Commons
+![Creative Commons](pictures/cc-by.png)
 
 ### Open Source Software
 
@@ -147,14 +160,12 @@ Es wurde nur [Open Source Software](https://de.wikipedia.org/wiki/Open_Source) v
 Folgend nähere Infos zur Software.
 
 #### QGIS
-[QGIS](http://www.qgis.org/) ist ein benutzerfreundliches Geoinformationssystem zum Betrachten, Bearbeiten und Erfassen von räumlichen Daten und ist GNU General Public License lizenziert. Wesentliche Merkmale der Applikation sind die breite Unterstützung gängiger Vektordaten und Rasterdaten wie Shapefile oder GeoTIFF, aber auch räumlicher Datenbanken wie PostGIS und SpatiaLite, ausgereifte Digitalisier-Werkzeuge zum Erfassen von Vektordaten sowie eine Druckzusammenstellung zum einfachen Erstellen von Kartenausdrucken.
+[QGIS](http://www.qgis.org/) ist ein benutzerfreundliches Geoinformationssystem zum Betrachten, Bearbeiten und Erfassen von räumlichen Daten und ist mit der GNU General Public License lizenziert. Wesentliche Merkmale der Applikation sind die breite Unterstützung gängiger Vektordaten und Rasterdaten wie Shapefile oder GeoTIFF, aber auch räumlicher Datenbanken wie PostGIS und SpatiaLite, ausgereifte Digitalisier-Werkzeuge zum Erfassen von Vektordaten sowie eine Druckzusammenstellung zum einfachen Erstellen von Kartenausdrucken.
 
-Die QGIS-Architektur baut stark auf Erweiterungen auf, nennenswert sind die fTools-Werkzeuge für allgemeine vektorbasierte Aufgaben oder die GRASS-Erweiterung für anspruchsvolle räumliche Analysen. Eine GPS-Erweiterung erlaubt es, GPX-Dateien zu lesen oder direkt auf ein GPS-Gerät zuzugreifen. Andere Erweiterungen erlauben das Einbinden von WMS- und WFS-Diensten.
+Die QGIS-Architektur baut stark auf Erweiterungen auf. Nennenswert sind die fTools-Werkzeuge für allgemeine vektorbasierte Aufgaben oder die GRASS-Erweiterung für anspruchsvolle räumliche Analysen. Eine GPS-Erweiterung erlaubt es, GPX-Dateien zu lesen oder direkt auf ein GPS-Gerät zuzugreifen. Andere Erweiterungen erlauben das Einbinden von WMS- und WFS-Diensten.
 ZITAT http://de.wikipedia.org/wiki/QGIS
 
-BILD
-Qgis screenshot
-http://commons.wikimedia.org/wiki/File:QGIS_2.2_Valmiera_showing_new_menu_design.png
+![QGIS](http://commons.wikimedia.org/wiki/File:QGIS_2.2_Valmiera_showing_new_menu_design.png "QGIS 2.2")
 
 **Benötigte Plugins**
 - [DB Manager]()
@@ -164,7 +175,7 @@ http://commons.wikimedia.org/wiki/File:QGIS_2.2_Valmiera_showing_new_menu_design
 **Starten mit QGIS**
 Informationen zum Runterladen und Installieren findet man auf [qgis.org](http://qgis.org/). 
 
-Erste Schritte mit QGIS werden einem auf qgis.org unter Documentation näher gebracht. Besonders zu empfehlen sind die beiden Screencast Serien [Tutorial von MrHiddin1](http://www.youtube.com/playlist?list=PLedvCUusOD_nxprzIwuDSA5oH61vUCP_w) und [Tutorial von jarretttotton](http://www.youtube.com/playlist?list=PLedvCUusOD_khPbVeSouD3jYcAv-0GUkU) zu Beginn, welche einen schnellen und umfassenden Überblick in QGIS geben.
+Erste Schritte mit QGIS befinden sich unter ['Dokumenation' auf qgis.org](http://www.qgis.org/de/docs/index.html#documentation-for-qgis-2-0). Besonders zu empfehlen sind die beiden Screencast Serien [Tutorial von MrHiddin1](http://www.youtube.com/playlist?list=PLedvCUusOD_nxprzIwuDSA5oH61vUCP_w) und [Tutorial von jarretttotton](http://www.youtube.com/playlist?list=PLedvCUusOD_khPbVeSouD3jYcAv-0GUkU) zu Beginn, welche einen schnellen und umfassenden Überblick in QGIS geben.
 
 #### GRASS GIS
 
@@ -177,27 +188,25 @@ ZITAT http://de.wikipedia.org/wiki/GRASS_GIS
 
 Informationen zum Runterladen und Installieren sowie Tutorials und die Dokumentation gibt es auf [grass.osgeo.org](http://grass.osgeo.org/).
 
-Um einen Überblick zur zu Beginn doch meist gewöhnungsbedürtigen Oberfläche und Datenverwaltung zu bekommen empfiehlt sich der [Workshop von Markus Neteler](http://geostat-course.org/Topic_NetelerMetz_2011)([Videos](https://archive.org/details/GeostatSummerSchoolGrassGisTutorial)).
+Um einen Überblick zur zu Beginn doch meist gewöhnungsbedürtigen Oberfläche und Datenverwaltung zu bekommen empfiehlt sich der [Workshop von Markus Neteler](http://geostat-course.org/Topic_NetelerMetz_2011) ([Videos](https://archive.org/details/GeostatSummerSchoolGrassGisTutorial)).
 
 #### Git und GitHub
 
 **[Git](http://git-scm.com/)** ist eine freie Software zur verteilten Versionsverwaltung von Dateien, die ursprünglich für die Quellcode-Verwaltung des Linux-Kernels entwickelt wurde. Git ist ein verteiltes Versionsverwaltungssystem, das sich in einigen Eigenschaften von traditionellen Versionskontrollsystemen unterscheidet:
-- Nicht-lineare Entwicklung: Sowohl das Erstellen neuer Entwicklungszweige (branching) als auch das Verschmelzen zweier oder mehrerer Zweige (merging) sind integraler Bestandteil der Arbeit mit Git, fest in die Git-Werkzeuge eingebaut und sehr performant
-- Kein zentraler Server: Jeder Benutzer besitzt eine lokale Kopie des gesamten Repositorys, inklusive der Versionsgeschichte (history). So können die meisten Aktionen lokal und ohne Netzwerkzugriff ausgeführt werden
+- Nicht-lineare Entwicklung: Sowohl das Erstellen neuer Entwicklungszweige (branching) als auch das Verschmelzen zweier oder mehrerer Zweige (merging) sind integraler Bestandteil der Arbeit mit Git, fest in die Git-Werkzeuge eingebaut und sehr performant.
+- Kein zentraler Server: Jeder Benutzer besitzt eine lokale Kopie des gesamten Repositorys, inklusive der Versionsgeschichte (history). So können die meisten Aktionen lokal und ohne Netzwerkzugriff ausgeführt werden.
 - Datentransfer zwischen Repositories: Daten können mit einer Reihe verschiedener Netzwerkprotokolle zwischen Repositories übertragen werden.
 - Kryptographische Sicherheit der Projektgeschichte: Die Geschichte eines Projektes wird so gespeichert, dass der Hash einer beliebigen Revision (commit) auf der vollständigen Geschichte basiert, die zu dieser Revision geführt hat.
-- Speichersystem und Dateiversionierung: Im Gegensatz zu CVS, wo jede Datei eine eigene Revisionsnummer besitzt, speichert Git bei einem Commit das gesamte Dateisystem ab
+- Speichersystem und Dateiversionierung: Im Gegensatz zu CVS, wo jede Datei eine eigene Revisionsnummer besitzt, speichert Git bei einem Commit das gesamte Dateisystem ab.
 - Säubern des Repositories: Die Daten gelöschter und zurückgenommener Aktionen und Entwicklungszweige bleiben vorhanden (und können wiederhergestellt werden), bis sie explizit gelöscht werden.
 - Interoperabilität: Es gibt Hilfsprogramme, die Interoperabilität zwischen Git und anderen Versionskontrollsystemen herstellen.
 - Web-Interface
 
-BILD
-logo
+![GIT](https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg)
 
 **[GitHub](https://github.com/)** ist ein webbasierter Hosting-Dienst für Software-Entwicklungsprojekte. Namensgebend ist das Versionsverwaltungs-System Git. 
 
-BILD
-logo
+![GitHub](https://upload.wikimedia.org/wikipedia/commons/b/b3/GitHub.svg)
 
 Im Gegensatz zu anderen Open-Source-Hostern wie SourceForge ist auf GitHub nicht das Projekt als Sammlung von Quellcode zentral, sondern der Nutzer mit seinen Repositories (Verzeichnissen, die von Git kontrolliert werden). Gleichzeitig wird das Erstellen und Wiedervereinigen von Abspaltungen (Forks) besonders propagiert. Forks dienen weiterhin dazu, einfach bei anderen Projekten mitentwickeln zu können. Um einem Repository/Projekt einen Beitrag beizusteuern, wird das Repository zunächst aufgespalten, dann werden die zu übernehmenden Änderungen hinzugefügt und dem Besitzer des Ur-Repositorys ein Pull-Request gestellt (alles über die Weboberfläche). Damit soll den Besonderheiten verteilter Versionskontrollsysteme besonders Rechnung getragen und zugleich ein soziales Netzwerk geschaffen werden, was sich auch in dem Slogan des Unternehmens und den aus „echten“ sozialen Netzwerken bekannten Funktionen „Beobachten“ oder „Folgen“ niederschlägt.
 
@@ -211,36 +220,36 @@ Um Versionierung mit Git und GitHub interaktiv zu lernen, bietet sich der [Onlin
 
 #### spatialSQL: postgresql, postGIS, pgRouting und pgAdmin3
 
-Zum Arbeiten mit räumlichen Daten wird eine Geodatenbank aufgesetzt. Hierzu wird postgresql als Datenbankmanagementsystem verwendet, welches mittels den Erweiterungen postGIS mit räumlichen Funktionen und und pgRouting mit Routing Funktionen für Mobilitätsforschung vorbereitet ist.
+Zum Arbeiten mit räumlichen Daten wird eine Geodatenbank aufgesetzt. Hierzu wird postgresql als Datenbankmanagementsystem verwendet, welches mittels den Erweiterungen postGIS mit räumlichen Funktionen und pgRouting mit Routing-Funktionen für Mobilitätsforschung vorbereitet ist.
 
-[postgreSQL](http://www.postgresql.org/) ist ein freies, objektrelationales Datenbankmanagementsystem (ORDBMS). Seine Entwicklung begann in den 1980er Jahren, seit 1997 wird die Software von einer Open-Source-Community weiterentwickelt.
+**[postgreSQL](http://www.postgresql.org/)** ist ein freies, objektrelationales Datenbankmanagementsystem (ORDBMS). Seine Entwicklung begann in den 1980er Jahren, seit 1997 wird die Software von einer Open-Source-Community weiterentwickelt.
 
 PostgreSQL ist weitgehend konform mit dem SQL-Standard ANSI-SQL 2008,[4] d. h. der Großteil der Funktionen ist verfügbar und verhält sich wie definiert. PostgreSQL ist vollständig ACID-konform (inklusive der Data Definition Language), und unterstützt erweiterbare Datentypen, Operatoren, Funktionen und Aggregate[5]. Obwohl sich die Entwicklergemeinde sehr eng an den SQL-Standard hält, gibt es dennoch eine Reihe von PostgreSQL-spezifischen Funktionalitäten, wobei in der Dokumentation bei jeder Eigenschaft ein Hinweis erfolgt, ob dies dem SQL-Standard entspricht, oder ob es sich um eine spezifische Erweiterung handelt. Darüber hinaus verfügt PostgreSQL über ein umfangreiches Angebot an Erweiterungen durch Dritthersteller, wie z. B. PostGIS.
 ZITAT http://de.wikipedia.org/wiki/PostgreSQL
 
-[SQL](http://de.wikipedia.org/wiki/SQL) ist eine Datenbanksprache zur Definition von Datenstrukturen in relationalen Datenbanken sowie zum Bearbeiten (Einfügen, Verändern, Löschen) und Abfragen von darauf basierenden Datenbeständen.
+**[SQL](http://de.wikipedia.org/wiki/SQL)** ist eine Datenbanksprache zur Definition von Datenstrukturen in relationalen Datenbanken sowie zum Bearbeiten (Einfügen, Verändern, Löschen) und Abfragen von darauf basierenden Datenbeständen.
 
 Die Sprache basiert auf der relationalen Algebra, ihre Syntax ist relativ einfach aufgebaut und semantisch an die englische Umgangssprache angelehnt. Fast alle gängigen Datenbanksysteme unterstützen SQL – allerdings in unterschiedlichem Umfang und leicht voneinander abweichenden „Dialekten“. Durch den Einsatz von SQL strebt man die Unabhängigkeit der Anwendungen vom eingesetzten Datenbankmanagementsystem an.
 
 Die Bezeichnung SQL wird im allgemeinen Sprachgebrauch als Abkürzung für „Structured Query Language“ aufgefasst, obwohl sie laut Standard ein eigenständiger Name ist. 
 ZITAT http://de.wikipedia.org/wiki/SQL
 
-[postGIS](http://postgis.org/) ist eine Erweiterung für die objektrelationale Datenbank PostgreSQL, die geografische Objekte und Funktionen umfasst. PostgreSQL mit PostGIS bildet eine Geodatenbank, die in Geoinformationssysteme eingebunden werden kann. Das Projekt implementiert die Simple Feature Access-Spezifikation des [Open Geospatial Consortium](http://de.wikipedia.org/wiki/Open_Geospatial_Consortium) und wird von der [Open Source Geospatial Foundation](http://de.wikipedia.org/wiki/Open_Source_Geospatial_Foundation) betreut.
+**[postGIS](http://postgis.org/)** ist eine Erweiterung für die objektrelationale Datenbank PostgreSQL, die geografische Objekte und Funktionen umfasst. PostgreSQL mit PostGIS bildet eine Geodatenbank, die in Geoinformationssysteme eingebunden werden kann. Das Projekt implementiert die 'Simple Feature Access-Spezifikation' des [Open Geospatial Consortium](http://de.wikipedia.org/wiki/Open_Geospatial_Consortium) und wird von der [Open Source Geospatial Foundation](http://de.wikipedia.org/wiki/Open_Source_Geospatial_Foundation) betreut.
 ZITAT http://de.wikipedia.org/wiki/PostGIS
 
-[pgRouting](http://pgrouting.org/) erweitert die PostgreSQL und postGIS um eine räumliche Routing-Funktionalität, steht unter der GPLv2 Lizenz. So können Daten durch verschiedene Clients verändert werden und sind sofort anwendbar. Kosten können dynamisch via SQL berechnet werden.
+**[pgRouting](http://pgrouting.org/)** erweitert die PostgreSQL und postGIS um eine räumliche Routing-Funktionalität, steht unter der GPLv2 Lizenz. So können Daten durch verschiedene Clients verändert werden und sind sofort anwendbar. Kosten können dynamisch via SQL berechnet werden.
 ZITAT http://pgrouting.org/
 
-[pgAdmin](http://www.pgadmin.org/) ist eine Open-Source-Software zur Entwicklung und Administration von PostgreSQL-Datenbanken. Eine graphische Benutzeroberfläche erleichtert die Administration von Datenbanken. Der Editor für SQL-Abfragen enthält ein graphisches EXPLAIN, mit dessen Hilfe sich performantere Abfragen erstellen lassen. Durch eine native Anbindung an PostgreSQL ermöglicht das GUI den Zugriff auf die gesamte PostgreSQL-Funktionalität.
+**[pgAdmin](http://www.pgadmin.org/)** ist eine Open-Source-Software zur Entwicklung und Administration von PostgreSQL-Datenbanken. Eine graphische Benutzeroberfläche erleichtert die Administration von Datenbanken. Der Editor für SQL-Abfragen enthält ein graphisches EXPLAIN, mit dessen Hilfe sich performantere Abfragen erstellen lassen. Durch eine native Anbindung an PostgreSQL ermöglicht das GUI den Zugriff auf die gesamte PostgreSQL-Funktionalität.
 ZITAT http://de.wikipedia.org/wiki/PgAdmin
 
 **Starten mit postgreSQL, postGIS und pgRouting**
 
-Das Installieren von postgreSQL mitsamt den beiden Erweiterungen kann etwas komplizierter sein je nach Betriebssystem. Mit der aktuellen Ubuntu Version 13.10  sollte es aber relativ einfach und schnell gehen ([Install/Setup in Ubuntu 13.10](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS21UbuntuPGSQL93Apt)). pgRouting muss kompiliert werden, was je nach Betriebssystem unterschiedlich funktioniert.
+Das Installieren von postgreSQL mitsamt den beiden Erweiterungen kann je nach Betriebssystem etwas komplizierter sein. Mit der aktuellen Ubuntu Version 13.10  sollte es aber relativ einfach und schnell gehen ([Install/Setup in Ubuntu 13.10](http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS21UbuntuPGSQL93Apt)). pgRouting muss kompiliert werden, was je nach Betriebssystem unterschiedlich funktioniert.
 
 Um postgreSQL verwenden zu können, muss man die Abfragesprache [SQL](http://de.wikipedia.org/wiki/SQL) beherrschen. Erste Schritte können mittels [W3CSchool](http://www.w3schools.com/sql/) oder [Youtube Tutorials](http://www.youtube.com/results?search_query=learn%20sql&sm=3) erlernt werden.
 
-Zu postGIS ist die [Dokumentations-Seite](http://postgis.net/documentation/) ein guter Startpunkt. SpatialSQL unterscheidet sich ja in der Anwendung zu normalen SQL ja nur durch neue räumliche Abfragen und dem Verwenden von geographischen Elementen.
+Für postGIS ist die [Dokumentations-Seite](http://postgis.net/documentation/) ein guter Startpunkt. SpatialSQL unterscheidet sich ja in der Anwendung zu normalen SQL ja nur durch neue räumliche Abfragen und dem Verwenden von geographischen Elementen.
 
 Zu pgRouting ist die Website mit [Dokumentation](http://docs.pgrouting.org/) und [Workshop](http://workshop.pgrouting.org/) zu empfehlen, sowie [Anita Graser's Tutorials]([QGIS pgrouting tag](http://anitagraser.com/tag/pgrouting/).
 
@@ -259,7 +268,7 @@ Graphviz bietet verschiedene Verfahren zur Visualisierung von Graphen an:
 Als Standard erzeugt Graphviz eine Textdatei als DOT-Quelltext in der die Attribute für die Position und Größe der Knoten und Kanten mit angegeben werden. Über Graphviz kann als Ausgabe aber auch eine Bilddatei erstellt werden. Unterstützt werden unter anderem die Dateiformate Postscript, SVG, JPEG, PNG und PDF.
 ZITAT http://de.wikipedia.org/wiki/Graphviz
 
-**[Gephi](http://gephi.org/)** ist ein Open Source Netwerk Analyse Software Packet in Java. Gephi wird sowohl in der Wissenschaft, wie auch im Journalismus und anderswo verwendet.
+**[Gephi](http://gephi.org/)** ist ein Open Source Netzwerk Analyse Software Packet in Java. Gephi wird sowohl in der Wissenschaft, wie auch im Journalismus und anderswo verwendet.
 ZITAT http://en.wikipedia.org/wiki/Gephi
 
 Plugins:
@@ -281,7 +290,7 @@ ZITAT http://de.wikipedia.org/wiki/Geospatial_Data_Abstraction_Library
 
 Ein [Offenes Dateiformat](https://de.wikipedia.org/wiki/Offenes_Format) ist eine publizierte Spezifikation zum Speichern digitaler Daten, welche ohne rechtliche oder technische Einschränkungen genutzt werden kann. Die Entwicklung offener Formate steht üblicherweise unter der Aufsicht eines offen zugänglichen Gremiums. Offene Formate müssen sowohl von proprietärer als auch von freier Software bzw. Open-Source-Software implementierbar sein. Offene Formate, Dateiformate wie Container, sind eine Untermenge offener Standards.
 
-Das Primärziel von Formatoffenheit ist es den ungehinderten Umgang mit Daten zu ermöglichen, ohne rechtliche (z.B. Lizenzen) oder technische (z.B. DRM) Restriktionen oder Abhängigkeiten zu kreieren. Ein häufig formuliertes Sekundärziel ist es, Wettbewerb zu ermöglichen, da die Nutzung proprietärer digitaler Formate leicht zum sog. Vendor Lock-in führen kann. Regierungen zeigen zunehmend Interesse am Einsatz offener Formate.
+Das Primärziel von Formatoffenheit ist es den ungehinderten Umgang mit Daten zu ermöglichen, ohne rechtliche (z.B. Lizenzen) oder technische (z.B. DRM) Restriktionen oder Abhängigkeiten zu kreieren. Ein häufig formuliertes Sekundärziel ist es, Wettbewerb zu ermöglichen, da die Nutzung proprietärer digitaler Formate leicht zum sog. [Vendor Lock-in](https://de.wikipedia.org/wiki/Vendor_lock-in) führen kann. Regierungen zeigen zunehmend Interesse am Einsatz offener Formate.
 ZITAT https://de.wikipedia.org/wiki/Offenes_Format
 
 #### Shapefile
@@ -289,8 +298,8 @@ ZITAT https://de.wikipedia.org/wiki/Offenes_Format
 
 Ein Shapefile ist keine einzelne Datei, es besteht aus mindestens drei Dateien:
 - .shp dient zur Speicherung der Geometriedaten
-- .dbf Sachdaten im dBASE-Format
-- .shx dient als Index der Geometrie zur Verknüpfung der Sachdaten (auch Attributdaten genannt)
+- .dbf Sachdaten (auch Attributdaten genannt) im dBASE-Format
+- .shx dient als Index der Geometrie zur Verknüpfung der Sachdaten
 
 Optionale Dateien:
 - .atx Attributindex
@@ -300,7 +309,7 @@ Optionale Dateien:
 - .prj Projektion der Daten
 - .cpg um den in der .dbf verwendeten Zeichensatz zu spezifizieren. [1]
 
-In einem Shapefile können jeweils nur Elemente eines Typs enthalten sein, z. B.:
+In einem Shapefile können jeweils nur Elemente eines Typs enthalten sein, z.B.
 - Punkte,
 - Linien,
 - Flächen (Polygone)
@@ -311,7 +320,7 @@ Zusätzlich zu dem jeweiligen Typ darf das Shapefile immer auch sogenannte Null 
 **Formatbeschränkungen**
 Die Größe der Shp- und DBF-Dateien darf 2 Gigabyte (oder 2^31 Bit) nicht überschreiten.[2]
 
-Das Attribut-Datenbankformat für die DBF-Komponentendatei beruht einem früheren dBase-Standard. Damit einher gehen folgende Einschränkungen:
+Das Attribut-Datenbankformat für die DBF-Komponentendatei beruht einem früheren dBase-Standard. Damit gehen folgende Einschränkungen einher:
 - Während das aktuelle dBase-Format wie auch GDAL / OGR (als Open-Source-Software-Bibliothek zum Lesen und Schreiben von Shapefiles) leere Felder als Null-Werte von der Ziffer 0 unterscheidet, nimmt ESRI Software diese Unterscheidung nicht vor.
 - eingeschränkte Unterstützung für Unicode-Feldnamen
 - Maximale Länge der Feldnamen: 10 Zeichen
@@ -322,7 +331,7 @@ ZITAT https://de.wikipedia.org/wiki/Shapefile
 
 #### SQLite
 
-[SQLite](https://www.sqlite.org/) ist eine Programmbibliothek, die ein relationales Datenbanksystem enthält. SQLite unterstützt einen Großteil der im SQL-92-Standard festgelegten SQL-Sprachbefehle. Unter anderem implementiert SQLite Transaktionen, Unterabfragen (subselects), Sichten (views), Trigger und benutzerdefinierte Funktionen. Public Domain
+[SQLite](https://www.sqlite.org/) ist eine Programmbibliothek, die ein relationales Datenbanksystem enthält. SQLite unterstützt einen Großteil der im SQL-92-Standard festgelegten SQL-Sprachbefehle. Unter anderem implementiert SQLite Transaktionen, Unterabfragen (subselects), Sichten (views), Trigger und benutzerdefinierte Funktionen. Es ist in der Public Domain.
 ZITAT https://de.wikipedia.org/wiki/SQLite
 
 #### SpatiaLite
@@ -335,7 +344,7 @@ ZITAT https://de.wikipedia.org/wiki/SpatiaLite
 [Part 1: Getting Started with SpatiaLite: An almost Idiot's Guide](http://www.bostongis.com/PrinterFriendly.aspx?content_name=spatialite_tut01)
 
 #### GeoJSON
-[GeoJSON](http://geojson.org/) ist ein offenes Format zum Encodieren einer Vielzahl von geographischen Datenstrukturen. Der Name stammt von [JSON](http://www.json.org/) (JavaScript Object Notation). Daher ist ein jedes GeoJSON Object auch ein JSON Object, wodurch JSON Tools für das Verarbeiten von GeoJSON Daten verwendet werden können. GeoJSON erlaubt es geographische Daten in einer von Mensch lesbaren Sprache zu speichern die kompakter ist als XML. Räumliche Datenformat-Typen die GeoJSON unterstützt sind mitunter point, polygon, multipolygons, features, geometry collections und bounding boxes, welche zusammen mit charakteristischen Informationen und Attributen gespeichert werden. Die Geometrien und deren Verhältnisse besitzen Eltern-Objekte, wie z.B. feature collections. GeoJSON erlaubt auch das spezifizieren von geographischen Koordinatensystemen mittels OGC CRS (coordinate reference system) oder mit EPSG Code. Wenn kein CRS definiert wird, verwendet GeoJSON den WGS84 Geoid.
+[GeoJSON](http://geojson.org/) ist ein offenes Format zum Encodieren einer Vielzahl von geographischen Datenstrukturen. Der Name stammt von [JSON](http://www.json.org/) (JavaScript Object Notation). Daher ist ein jedes GeoJSON-Object auch ein JSON-Object, wodurch JSON-Tools für das Verarbeiten von GeoJSON-Daten verwendet werden können. GeoJSON erlaubt es geographische Daten in einer von Mensch lesbaren Sprache zu speichern die kompakter ist als XML. Räumliche Datenformat-Typen die GeoJSON unterstützt sind mitunter point, polygon, multipolygons, features, geometry collections und bounding boxes, welche zusammen mit charakteristischen Informationen und Attributen gespeichert werden. Die Geometrien und deren Verhältnisse besitzen Eltern-Objekte, wie z.B. feature collections. GeoJSON erlaubt auch das spezifizieren von geographischen Koordinatensystemen mittels OGC CRS (coordinate reference system) oder mit EPSG Code. Wenn kein CRS (Coordinate Reference System) definiert wird, verwendet GeoJSON den WGS84-Geoid.
 REF: übersetzt aus [Spezifikation](http://geojson.org/geojson-spec.html)
 
 http://wiki.alpine-geckos.at/wiki/GeoJSON
@@ -366,7 +375,7 @@ Die Kodierung von Zahlen (Byte-Reihenfolge) kann entweder als Big Endian oder Li
 
 Einzelne Bildpunkte können bei TIFF aus beliebig vielen Einzelwerten (Samples) bestehen. Samples können neben dem Standardfall „ein Byte gleich ein Sample“ auch Teile eines Bytes einnehmen (z. B. 1, 2 oder 4 Bits) oder aus mehreren Bytes bestehen. Neben Ganzzahlen können auch Gleitkommazahlen als Bilddaten abgelegt werden. Die Möglichkeit zur Speicherung von Transparenz-Information (Alphakanal) existiert ebenfalls.
 
-Bilddaten werden in Gruppen von Pixelzeilen, sogenannten Stripes (Streifen), oder als rechteckige Tiles (Kacheln) abgelegt. Die Speicherung erfolgt dabei für jeden Streifen beziehungsweise für jede Kachel unabhängig von den anderen, so dass Bildteile, je nach Wahl der Größe der Streifen beziehungsweise Kacheln, relativ schnell geladen werden können. Andere Formate erfordern hier das Laden sämtlicher Bilddaten vor dem gewünschten Ausschnitt. Ziel der Unterteilung beim Entwurf war vor allem, dass Einzelteile komplett im Speicher gehalten werden können. Die 1992er-Spezifikation empfiehlt dafür acht Kilobyte Maximalgröße.
+Bilddaten werden in Gruppen von Pixelzeilen, sogenannten Stripes (Streifen), oder als rechteckige Tiles (Kacheln) abgelegt. Die Speicherung erfolgt dabei für jeden Streifen beziehungsweise für jede Kachel unabhängig von den anderen, sodass Bildteile, je nach Wahl der Größe der Streifen beziehungsweise Kacheln, relativ schnell geladen werden können. Andere Formate erfordern hier das Laden sämtlicher Bilddaten vor dem gewünschten Ausschnitt. Ziel der Unterteilung beim Entwurf war vor allem, dass Einzelteile komplett im Speicher gehalten werden können. Die 1992er-Spezifikation empfiehlt dafür acht Kilobyte Maximalgröße.
 
 Programme wie Photoshop bieten an, TIFF-Dateien mit separaten Ebenen zu erstellen. Ferner gibt es die Möglichkeit, TIFFs mit einer Bildpyramide abzuspeichern. Dadurch sind innerhalb einer Datei mehrere Auflösungen des Bildes enthalten. Damit können zum Beispiel Layout-Programme oder Bildbetrachter eine kleine Vorschau des Bildes schneller anzeigen, da sie das Bild nicht in der vollen Auflösung zu laden brauchen.
 
@@ -377,31 +386,41 @@ https://en.wikipedia.org/wiki/Markdown
 [GitHub Flavoured Markdown](http://github.github.com/github-flavored-markdown/)
 
 ### Open Data Repositories
-[Open Data](https://de.wikipedia.org/wiki/Open_data) bedeutet die freie Verfügbar- und Nutzbarkeit von, meist öffentlichen, Daten. Sie beruht auf der Annahme, dass vorteilhafte Entwicklungen unterstützt werden wie Open Government, wenn Daten für jedermann frei zugänglich gemacht werden und damit mehr Transparenz und Zusammenarbeit ermöglichen. Dazu verwenden die Ersteller Lizenzmodelle, die auf Copyright, Patente oder andere proprietäre Rechte weitgehend verzichten. Open Data ähnelt dabei zahlreichen anderen „Open“-Bewegungen, wie zum Beispiel Open Source, Open Content, Open Access oder Open Education und ist eine Voraussetzung für Open Government.
+[Open Data](https://de.wikipedia.org/wiki/Open_data) bedeutet die freie Verfügbar- und Nutzbarkeit von, meist öffentlichen, Daten. Sie beruht auf der Annahme, dass vorteilhafte Entwicklungen unterstützt werden wie *Open Government*, wenn Daten für jedermann frei zugänglich gemacht werden und damit mehr Transparenz und Zusammenarbeit ermöglichen. Dazu verwenden die Ersteller Lizenzmodelle, die auf Copyright, Patente oder andere proprietäre Rechte weitgehend verzichten. Open Data ähnelt dabei zahlreichen anderen „Open“-Bewegungen, wie zum Beispiel *Open Source*, *Open Content*, *Open Access* oder *Open Education* und ist eine Voraussetzung für Open Government.
 REF: Wikipedia
 Open Data Repositories werden häufig mit der "data" Bezeichnung in der URL angegeben. Eine zentrale Stelle, die Daten von mehreren OGD-Portalen sammeln ist unter [data.gv.at](http://data.gv.at/) abrufbar. Nicht nur Städte und Länder geben Teile ihrer Daten frei, auch Ministerien, Gemeinden und staatsnahe Betriebe sind darunter.
 
-BILD
+![OGD-Österreich](pictures/OGD-Austria.png)
+
+
+
+
 
 ### OGD Graz
 Das [OGD-Portal der Stadt Graz](http://data.graz.gv.at/) bietet statistische und geographische sowie Verwaltungsdaten an.
 Dazu geh"oren beispielsweise EinwohnerInnen- oder Finanzstatistiken in Form von CSV-Daten oder auch Karten mit Standorten in verschiedenen von GI-Systemen lesbaren Dateiformaten wie Shape oder WMS.
 Der verwendete Zeichensatz ist bei den meisten Daten *'utf8'*.
 
-BILD
+![OGD-Graz](pictures/OGD-Graz.png)
+
+
 
 ### OGD Steiermark
 Das [OGD-Portal des Landes Steimerark](http://data.steiermark.at/) ist ähnlich aufgebaut wie das OGD-Portal der Stadt Graz. Zeichensätze sind allerdings vorwiegend in *'latin-1'* aka *'ISO-8859-1'*.
 
-BILD
+![OGD-Steiermark](pictures/OGD-Steiermark.png)
+
+
 
 ### OGD Wien
 Das [OGD-Portal der Stadt Wien](http://data.wien.gv.at/) bietet derzeit das größte Open Data Repository. Was es gegenüber den anderen OGD-Portalen hervorhebt, ist beispielsweise die Verfügbarkeit von Daten zu öffentlichen Verkehrsmitteln und einigen Planungsdaten (z.B. geplante ÖV-Netzwerkerweiterung). Ebenso gibt es ein breites Sortiment an Daten wichtiger Standorte der öffentlichen Versorgung. Der verwendete Zeichensatz ist bei den meisten Daten *'utf8'*.
 
-BILD
+![OGD-Wien](pictures/OGD-Wien.png)
+
+
 
 ### OpenStreetMap
-BILD
+![OpenStreetMap](pictures/OpenStreetMap.png)
 
 [OpenStreetMap](http://wiki.openstreetmap.org/wiki/Map_Features) stellt die gesamten Daten unter der [Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/) zur Verfügung.
 [OpenStreetMap mit QGis](http://www.qgis.org/en/docs/user_manual/osm/openstreetmap.html)
