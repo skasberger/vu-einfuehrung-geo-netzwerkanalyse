@@ -375,8 +375,10 @@ Programme wie Photoshop bieten an, TIFF-Dateien mit separaten Ebenen zu erstelle
 
 #### Markdown
 
-Markdown ist eine vereinfachte Auszeichnungssprache. Ein Ziel von Markdown ist, dass schon die Ausgangsform ohne weitere Konvertierung leicht lesbar ist. Als Auszeichnungselemente wurden daher vor allem Auszeichnungsarten verwendet, die in Plaintext und E-Mails üblich sind. Die Markdown-Konvertierungssoftware wandelt Text in gültiges und W3C-konformes XHTML um. Als Auszeichnungssprache wird Markdown in Content-Management-Systemen verwendet.
+[Markdown ist eine vereinfachte Auszeichnungssprache. Ein Ziel von Markdown ist, dass schon die Ausgangsform ohne weitere Konvertierung leicht lesbar ist. Als Auszeichnungselemente wurden daher vor allem Auszeichnungsarten verwendet, die in Plaintext und E-Mails üblich sind. Die Markdown-Konvertierungssoftware wandelt Text in gültiges und W3C-konformes XHTML um. Als Auszeichnungssprache wird Markdown in Content-Management-Systemen verwendet.][1]
 ZITAT https://de.wikipedia.org/wiki/Markdown
+
+[Daring Fireball](https://daringfireball.net/projects/markdown/)
 
 GitHub verwendet eine Sonderform mit speziellen Funktionen, [GitHub Flavoured Markdown](http://github.github.com/github-flavored-markdown/) genannt. Damit wurde die gesamte Doku geschrieben, welche dann von GitHub in HTML Seiten gerendert wird.
 
@@ -457,10 +459,15 @@ Und zuletzt: Keine Scheu, im Internet bei anderen ab zu sehen. Dies ist eine her
 - benötigte QGIS plugins checken
 - Theorie: Betweeness, Closeness
 - Theorie: können alle shortest path algorithmen mit impedanzen, also mit gewichtungen arbeiten??
-- einleitung ergänzen
+- einleitung ergänzen: Inhaltsverzeichnis mit Links erstellen
 
 ### Später
 - Verkehr gehört noch ausgebaut => David
 - lektorat => David
 - Blog Artikel => David
 - Weiter Anwendungen von Netzwerkanalyse verbessern
+
+## REFERENZEN
+[1]: https://de.wikipedia.org/wiki/Markdown "Wikipedia Page Markdown, Zugriff 2014-04-03"
+
+
