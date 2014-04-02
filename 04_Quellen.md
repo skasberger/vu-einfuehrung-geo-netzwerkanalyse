@@ -1,7 +1,7 @@
 # Quellen
 
-[Social Network Analysis Course @ openscienceASAP](http://openscienceasap.org/education/courses/social-network-analysis/)
-[Social Network Analysis Youtube Playlist](https://www.youtube.com/playlist?list=PLhk-E9DWN_pOWHq2SnEFCn9lzHMBi1meF&feature=mh_lolz)
+- [Social Network Analysis Course @ openscienceASAP](http://openscienceasap.org/education/courses/social-network-analysis/)
+- [Social Network Analysis Youtube Playlist](https://www.youtube.com/playlist?list=PLhk-E9DWN_pOWHq2SnEFCn9lzHMBi1meF&feature=mh_lolz)
 
 ## Openness
 - [OSGeo](http://www.osgeo.org/)
@@ -25,9 +25,7 @@
 
 ## Literatur
 
-### Wissenschaftliche Paper
-
-### Wissenschaftliche Monographien
+### Wissenschaftliche Publikationen
 - [The New Science of Cities](https://mitpress.mit.edu/books/new-science-cities) by Michael Batty
 - [Networks, Crowds, and Markets:  Reasoning About a Highly Connected World](http://www.cs.cornell.edu/home/kleinber/networks-book/) by David Easley and Jon Kleinberg
 - [Networks: An Introduction ](http://www-personal.umich.edu/~mejn/networks-an-introduction/) by M. E. J. Newman
@@ -38,39 +36,38 @@
 - [Small Worlds: The Dynamics of Networks between Order and Randomness](http://press.princeton.edu/titles/6768.html) by Duncan J. Watts
 
 ## Software
-[Using graphviz to draw graphs](http://avedo.net/338/using-graphviz-to-draw-graphs/)
-[QGIS](http://qgis.org): [Deutscher User Guide](http://docs.qgis.org/2.0/pdf/QGIS-2.0-UserGuide-de.pdf)
-[pgRouting](http://pgrouting.org/)
-[PostGIS](http://postgis.org/)
-[PostgreSQL](http://www.postgresql.org/)
-[PGRouting Manual](http://docs.pgrouting.org/2.0/en/pgRoutingDocumentation.pdf)
+- [Using graphviz to draw graphs](http://avedo.net/338/using-graphviz-to-draw-graphs/)
+- [QGIS](http://qgis.org): [Deutscher User Guide](http://docs.qgis.org/2.0/pdf/QGIS-2.0-UserGuide-de.pdf)
+- [pgRouting](http://pgrouting.org/)
+- [PostGIS](http://postgis.org/)
+- [PostgreSQL](http://www.postgresql.org/)
+- [PGRouting Manual](http://docs.pgrouting.org/2.0/en/pgRoutingDocumentation.pdf)
 
 ### Gephi
-[Youtube Playlist](https://www.youtube.com/playlist?list=PLedvCUusOD_npdPtovJpErTXx0ifkgIeQ)
+- [Youtube Playlist](https://www.youtube.com/playlist?list=PLedvCUusOD_npdPtovJpErTXx0ifkgIeQ)
 
 ### GRASS
-
+soon...
 
 ### Connecting Software
-[GRASS and Octave](http://grasswiki.osgeo.org/wiki/GRASS_and_Octave)
-[GRASS and Python](http://grasswiki.osgeo.org/wiki/GRASS_and_Python)
-[GRASS and Shell](http://grasswiki.osgeo.org/wiki/GRASS_and_Shell)
-[QGIS GRASS Cookbook](http://grasswiki.osgeo.org/wiki/QGIS_GRASS_Cookbook)
-[GRASS und SAGA]()
-
-
+- [GRASS and Octave](http://grasswiki.osgeo.org/wiki/GRASS_and_Octave)
+- [GRASS and Python](http://grasswiki.osgeo.org/wiki/GRASS_and_Python)
+- [GRASS and Shell](http://grasswiki.osgeo.org/wiki/GRASS_and_Shell)
+- [QGIS GRASS Cookbook](http://grasswiki.osgeo.org/wiki/QGIS_GRASS_Cookbook)
+- [GRASS und SAGA]()
 
 ## Dateiformate
-[Erklärung unterschiedlichster Dateiformate unter 4.2.](http://www.ogd.cc/diplomarbeit/)
-[SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index)
-[SQLite](https://www.sqlite.org/)
-[Shapefile](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf): Das Dateiformat Shapefile
+- [Erklärung unterschiedlichster Dateiformate unter 4.2.](http://www.ogd.cc/diplomarbeit/)
+- [SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index)
+- [SQLite](https://www.sqlite.org/)
+- [Shapefile](http://www.esri.com/library/whitepapers/pdfs/shapefile.pdf): Das Dateiformat Shapefile
 
-## Daten
-[OSGeo Public Geospatial Data Project](http://wiki.osgeo.org/wiki/Public_Geospatial_Data_Project)
-[Straßengraph Wien](https://open.wien.at/site/datensatz/?id=1039ed7e-97fb-435f-b6cc-f6a105ba5e09): [WFS GeoJSON Knoten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENKNOTENOGD&srsName=EPSG:4326&outputFormat=json), [WFS GeoJSON Kanten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENGRAPHOGD&srsName=EPSG:4326&outputFormat=json)
-[Straßengraph ASFINAG](https://open.wien.at/site/datensatz/?id=db389f75-56c3-4d61-9bb7-1f1c675edeaf): [WFS GeoJSON Knoten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:ASFINAGKNOTENOGD&srsName=EPSG:4326&outputFormat=json) & [WFS GeoJSON Kanten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:ASFINAGSTRASSEOGD&srsName=EPSG:4326&outputFormat=json)
-[U-Bahnnetz Bestand](https://open.wien.at/site/datensatz/?id=2d0e9a21-fa5f-441d-948a-fe97a453a827): [WFS GeoJSON](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:UBAHNOGD,ogdwien:UBAHNHALTOGD&srsName=EPSG:4326&outputFormat=json)
-[Öffentliches Verkehrsnetz - Haltestellenpunkte](https://open.wien.at/site/datensatz/?id=f1f6f15d-2faa-4b62-b78b-80599dd1c66e): [WFS GeoJSON](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&srsName=EPSG:4326&outputFormat=json&typeName=ogdwien:OEFFHALTESTOGD)
-[Öffentliches Verkehrsnetz - Liniennetz](https://open.wien.at/site/datensatz/?id=36a8b9e9-909e-4605-a7ba-686ee3e1b8bf): [WFS GeoJSON](http://data.wien.gv.at/daten/wfs?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:OEFFLINIENOGD&srsName=EPSG:4326&outputFormat=json)
+## Daten Repositories
+- [OSGeo Public Geospatial Data Project](http://wiki.osgeo.org/wiki/Public_Geospatial_Data_Project)
+- [Straßengraph Wien](https://open.wien.at/site/datensatz/?id=1039ed7e-97fb-435f-b6cc-f6a105ba5e09): [WFS GeoJSON Knoten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENKNOTENOGD&srsName=EPSG:4326&outputFormat=json), - [WFS GeoJSON Kanten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:STRASSENGRAPHOGD&srsName=EPSG:4326&outputFormat=json)
+- [Straßengraph ASFINAG](https://open.wien.at/site/datensatz/?id=db389f75-56c3-4d61-9bb7-1f1c675edeaf): [WFS GeoJSON Knoten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:ASFINAGKNOTENOGD&srsName=EPSG:4326&outputFormat=json) & [WFS GeoJSON Kanten](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:ASFINAGSTRASSEOGD&srsName=EPSG:4326&outputFormat=json)
+- [U-Bahnnetz Bestand](https://open.wien.at/site/datensatz/?id=2d0e9a21-fa5f-441d-948a-fe97a453a827): [WFS GeoJSON](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:UBAHNOGD,ogdwien:UBAHNHALTOGD&srsName=EPSG:4326&outputFormat=json)
+- [Öffentliches Verkehrsnetz - Haltestellenpunkte](https://open.wien.at/site/datensatz/?id=f1f6f15d-2faa-4b62-b78b-80599dd1c66e): [WFS GeoJSON](http://data.wien.gv.at/daten/geoserver/ows?service=WFS&request=GetFeature&version=1.1.0&srsName=EPSG:4326&outputFormat=json&typeName=ogdwien:OEFFHALTESTOGD)
+- [Öffentliches Verkehrsnetz - Liniennetz](https://open.wien.at/site/datensatz/?id=36a8b9e9-909e-4605-a7ba-686ee3e1b8bf): [WFS GeoJSON](http://data.wien.gv.at/daten/wfs?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:OEFFLINIENOGD&srsName=EPSG:4326&outputFormat=json)
+
 

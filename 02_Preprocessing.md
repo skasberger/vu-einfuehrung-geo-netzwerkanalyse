@@ -104,6 +104,7 @@ Um weiterfolgend besser arbeiten zu können, macht es Sinn die Daten lokal zu sp
 ```
 Datenquelle: CC-BY-3.0: Land Steiermark - data.steiermark.gv.at
 License: CC BY 3.0 AT http://creativecommons.org/licenses/by/3.0/at/deed.de
+```
 
 ## Daten in postgresql importieren
 
@@ -118,6 +119,10 @@ Layer müssen geladen sein: aufpassen auf encoding.
 via db manager in postgresql importieren (screeny) => einteilig wenns geht, index erstellen, srid target 4326
 keine minus zeichen zum trennen sondern underbar, sonst postgresql fehler.
 
+http://linfiniti.com/2010/03/batch-importing-shapefiles-into-postgis/
+http://anitagraser.com/2012/09/26/wfs-to-postgis-in-3-steps/
+
+[pgRouting 2.0 for Windows quick guide](http://anitagraser.com/2013/07/06/pgrouting-2-0-for-windows-quick-guide/)
 
 ### Routingfähiges Netzwerk in pgRouting erstellen
 **Erstellen eines Netzwerkgraphen (network graph), wo alle Kanten sämtlicher Netzwerke drinnen sind**

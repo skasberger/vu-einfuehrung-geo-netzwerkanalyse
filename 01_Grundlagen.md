@@ -1,13 +1,10 @@
-QDL# TODO
-- Shortest Path, Communities und Centralities recherchieren
-- Zitationen einfügen
-- Bilder erstellen und einbinden => David
-- lektorat => David
-- benötigte QGIS plugins checken
 
 # Grundlagen
 
-Im folgenden Dokument gibt es grundlegende, einführende Informationen zu 1) Graphentheorie und deren Anwendungsmöglichkeiten in der Mobilitätsforschung, 2) den Prinzipien von offener Wissenschaft mit Open Source Software, Open Data Repositories für die Daten und offene Datenformate für den Austausch räumlicher Inforamtionen und Graphen und 3) Lösungsansätze bei Problemen und Fragen.
+Das folgende Dokument beinhaltet eine Einführung in 
+- 1) die Graphentheorie und deren Anwendungsmöglichkeiten in der Mobilitätsforschung, 
+- 2) den Prinzipien von offener Wissenschaft mit Open Source Software, Open Data Repositories für die Daten und offene Datenformate für den Austausch räumlicher Inforamtionen und Graphen und 
+- 3) Lösungsansätze bei Problemen und Fragen.
 
 Weitere Materialien und Informationen erfährt ihr auf der [Übersichts-Seite](http://openscienceasap.org/education/courses/vu-einfuehrung-geo-netzwerkanalyse/).
 
@@ -74,19 +71,17 @@ Bipartite Netzwerke haben in der Mobilitätsforschung kaum Verwendung.
   
 ### Shortest Path
 
-Shortest Path bezeichnet Algorithmen, die die kürzeste Verbindung zwischen zwei Knoten sucht und somit die zentrale Aufgabe zum Lösen eines Routing-Problems ist. Es gibt verschieden Arten (Algorithmen) solche Shortest Path Probleme zu lösen. Ein sehr weit verbreiteter ist der Dijkstra Algorithmus ([Video](https://www.youtube.com/watch?v=Q5ebFH8Yho4)). Weitere sind [A*](), [A*]() und [A*]().
-
-?? können alle mit impedanzen, also mit gewichtungen arbeiten ??
+Shortest Path bezeichnet Algorithmen, die die kürzeste Verbindung zwischen zwei Knoten sucht und somit die zentrale Aufgabe zum Lösen eines Routing-Problems ist. Es gibt verschieden Arten (Algorithmen) solche Shortest Path Probleme zu lösen. Ein sehr weit verbreiteter ist der Dijkstra Algorithmus ([Video](https://www.youtube.com/watch?v=Q5ebFH8Yho4)). Weitere Algorithmen sind [A*](http://de.wikipedia.org/wiki/A*-Algorithmus), [Bellman-Ford](http://de.wikipedia.org/wiki/Bellman-Ford-Algorithmus) oder [Floyd Warshall](http://de.wikipedia.org/wiki/Algorithmus_von_Floyd_und_Warshall)
 
 ### Centralities
 #### Degree (Grad)
-Der Grad eines Knoten ist die Anzahl an Kanten, die von ihm ausgehen.   
+Der Grad eines Knoten ist die Anzahl an Kanten, die von ihm ausgehen. Bei einem gerichteten Graphen gibt es noch die Unterscheidung in Indegree, Zahl der Kanten zum Knoten, und Outdegree, Zahl der Kanten weg vom Knoten.
 
 #### Betweeness
-wie beeinflusst ein Akteur die Beziehung zwischen zwei anderen Akteuren
+Betweeness Centrality stellt den relativen Anteil aller Shortest Path die über einen Knoten laufen dar.
 
 #### Closeness
-wie nahe steht ein Akteur zum anderen
+
 
 ### Community Detection
 
@@ -96,22 +91,18 @@ Eine verbundene Komponente eines Graphen ist eine Untermenge der Knoten, wo es 1
 
 ## Anwendungen 
 
-
 ### Verkehr
 **Evaluatoren:** werden verwendet, um Attribute der Quelldaten den Netzwerkelementen zuzuweisen (z.B. verschiedene Angaben zu Kreuzungen (Wartezeit) werden aus einem jeweiligen Shape hinzugefügt; ebenso falls es unterschiedliche Einschränkungen gibt; auch Fahrzeit)
 
+#### Analysen
+**Der Einzugsbereich (Service Area)** ist eine Zone um einen Knoten, der auf Basis von Kosten und Impedanzen berechnet wird. Alle Punkte innerhalb dieser Zone können den zentralen Knoten in dem gegebenen Zeitintervall erreichen. Es können über mehrere Zeitintervalle mehrere Zonen gezogen werden. Die Visualisierung von Einzugsbereichs zeigt beispielsweise, welche Gebiete einer Stadt gut erreichbar sind und welche nicht. Dazu gehören Erreichbarkeiten und Reichweiten.
 
 
+**Closest Facility** ist eine Analyse, die von einem gegebenen Startpunkt den nächsten von mehreren gegebenen Endpunkten sucht. Als Startpunkt kann z.B. ein Unfallort dienen, die Endpunkte sind Krankenhäuser, gesucht wird das nächste Krankenhaus. Bei der Analyse können Impedanzen festgelegt und die besten Routen, Fahrkosten und Wegbeschreibungen mit z.B. Shortest Path ermittelt werden.
 
+**Vehicle Routing Problem** Unter Vehicle Routing Problem versteht man das Problem, eine möglichst gute Zuordnung von Fahrzeugen zu Aufträgen und für jedes Fahrzeug eine optimale Reihenfolge der zu bedienenden Auftragsstandorte zu finden. Eine Lösung eines Tourenplanungsproblems hat daher meist zwei Aspekte: die Clusterung gibt an, welche Aufträge zu einer Tour zusammengefasst werden, und das Routing definiert, in welcher Reihenfolge die Punkte innerhalb einer Tour bedient werden. Zielsetzung einer Tourenplanung ist zum Beispiel die Minimierung der Anzahl der eingesetzten Fahrzeuge, der zurückgelegten Strecke, der Einsatzzeit oder einer komplexeren Kostenfunktion. Beim Standardproblem der Tourenplanung liegen alle Start- oder Zielpunkte in einem Depot und es stehen dort eine begrenzte oder unbegrenzte Zahl von Fahrzeugen zur Verfügung. Andere Varianten betrachten zusätzliche Kapazitätsrestriktionen für die Fahrzeuge (Capacited Vehicle Routing Problem, CVRP), mehrere Depots oder beliebige Start- und Zielpunkte (sog. Pickup-and-Delivery-Probleme).
 
-Transport: Konnektivität, Kosten, Hierarchien, Turns, Schnellste vs kürzeste Route, Impedanzen: Einbahnen, Abbiegeverbote, Höhenbeschränkungen, Gewichtsbeschränkungen, Gefahrengüter, Nachtfahrverbote, Baustellen
-Kosten
-Impedanzen
-Konnektivität
-Turns
-alles nötige aus Skriptum
-
-Dykstra Algorithmus, Kosten/Impendanz: Distanz (Weg), Zeit; Origin Destination (In ArcGis eine Möglichkeit, Daten nur in Tabellarform oder als Kartogramm wiederzugeben)
+ZITAT https://en.wikipedia.org/wiki/Vehicle_routing_problem
 
 ### Weitere
 
@@ -168,11 +159,12 @@ ZITAT http://de.wikipedia.org/wiki/QGIS
 ![QGIS](http://commons.wikimedia.org/wiki/File:QGIS_2.2_Valmiera_showing_new_menu_design.png "QGIS 2.2")
 
 **Benötigte Plugins**
-- [DB Manager]()
+- DB Manager
 - fTools
 - GRASS
 
-**Starten mit QGIS**
+**Starten mit QGIS** 
+
 Informationen zum Runterladen und Installieren findet man auf [qgis.org](http://qgis.org/). 
 
 Erste Schritte mit QGIS befinden sich unter ['Dokumenation' auf qgis.org](http://www.qgis.org/de/docs/index.html#documentation-for-qgis-2-0). Besonders zu empfehlen sind die beiden Screencast Serien [Tutorial von MrHiddin1](http://www.youtube.com/playlist?list=PLedvCUusOD_nxprzIwuDSA5oH61vUCP_w) und [Tutorial von jarretttotton](http://www.youtube.com/playlist?list=PLedvCUusOD_khPbVeSouD3jYcAv-0GUkU) zu Beginn, welche einen schnellen und umfassenden Überblick in QGIS geben.
@@ -214,6 +206,7 @@ Während Open-Source-Projekte GitHub kostenfrei nutzen können, gibt es auch kos
 ZITAT http://de.wikipedia.org/wiki/GitHub
 
 **Starten mit Git/GitHub**
+
 Zu Beginn sollte man sich in die Verwendung von Git zum Versionieren einlesen und -üben. Hier empfiehlt sich das Buch [Pro Git von Scott Chacon](http://git-scm.com/book) sowie das Durchgehen der [Dokumentation](http://git-scm.com/doc).
 
 Um Versionierung mit Git und GitHub interaktiv zu lernen, bietet sich der [Online-Workshop tryGit](http://try.github.io//levels/1/challenges/1). Am besten ist es aber wie so oft, lokal am eigenen Rechner zu üben und herum zu spielen (Backup davor nicht vergessen!).
@@ -318,6 +311,7 @@ In einem Shapefile können jeweils nur Elemente eines Typs enthalten sein, z.B.
 Zusätzlich zu dem jeweiligen Typ darf das Shapefile immer auch sogenannte Null Shapes enthalten. Diese haben keine Geometrie, aber wie jeder andere Typ einen Datensatz in der zugehörigen DBF Datei. Weiterhin kann unterschieden werden zwischen 2D-Geometrien und 3D-Geometrien.
 
 **Formatbeschränkungen**
+
 Die Größe der Shp- und DBF-Dateien darf 2 Gigabyte (oder 2^31 Bit) nicht überschreiten.[2]
 
 Das Attribut-Datenbankformat für die DBF-Komponentendatei beruht einem früheren dBase-Standard. Damit gehen folgende Einschränkungen einher:
@@ -381,74 +375,92 @@ Programme wie Photoshop bieten an, TIFF-Dateien mit separaten Ebenen zu erstelle
 
 #### Markdown
 
-https://en.wikipedia.org/wiki/Markdown
+Markdown ist eine vereinfachte Auszeichnungssprache. Ein Ziel von Markdown ist, dass schon die Ausgangsform ohne weitere Konvertierung leicht lesbar ist. Als Auszeichnungselemente wurden daher vor allem Auszeichnungsarten verwendet, die in Plaintext und E-Mails üblich sind. Die Markdown-Konvertierungssoftware wandelt Text in gültiges und W3C-konformes XHTML um. Als Auszeichnungssprache wird Markdown in Content-Management-Systemen verwendet.
+ZITAT https://de.wikipedia.org/wiki/Markdown
 
-[GitHub Flavoured Markdown](http://github.github.com/github-flavored-markdown/)
+GitHub verwendet eine Sonderform mit speziellen Funktionen, [GitHub Flavoured Markdown](http://github.github.com/github-flavored-markdown/) genannt. Damit wurde die gesamte Doku geschrieben, welche dann von GitHub in HTML Seiten gerendert wird.
 
 ### Open Data Repositories
 [Open Data](https://de.wikipedia.org/wiki/Open_data) bedeutet die freie Verfügbar- und Nutzbarkeit von, meist öffentlichen, Daten. Sie beruht auf der Annahme, dass vorteilhafte Entwicklungen unterstützt werden wie *Open Government*, wenn Daten für jedermann frei zugänglich gemacht werden und damit mehr Transparenz und Zusammenarbeit ermöglichen. Dazu verwenden die Ersteller Lizenzmodelle, die auf Copyright, Patente oder andere proprietäre Rechte weitgehend verzichten. Open Data ähnelt dabei zahlreichen anderen „Open“-Bewegungen, wie zum Beispiel *Open Source*, *Open Content*, *Open Access* oder *Open Education* und ist eine Voraussetzung für Open Government.
 REF: Wikipedia
+
 Open Data Repositories werden häufig mit der "data" Bezeichnung in der URL angegeben. Eine zentrale Stelle, die Daten von mehreren OGD-Portalen sammeln ist unter [data.gv.at](http://data.gv.at/) abrufbar. Nicht nur Städte und Länder geben Teile ihrer Daten frei, auch Ministerien, Gemeinden und staatsnahe Betriebe sind darunter.
 
 ![OGD-Österreich](pictures/OGD-Austria.png)
 
-
-
-
-
 ### OGD Graz
-Das [OGD-Portal der Stadt Graz](http://data.graz.gv.at/) bietet statistische und geographische sowie Verwaltungsdaten an.
-Dazu geh"oren beispielsweise EinwohnerInnen- oder Finanzstatistiken in Form von CSV-Daten oder auch Karten mit Standorten in verschiedenen von GI-Systemen lesbaren Dateiformaten wie Shape oder WMS.
-Der verwendete Zeichensatz ist bei den meisten Daten *'utf8'*.
+Das [OGD-Portal der Stadt Graz](http://data.graz.gv.at/) bietet statistische und geographische sowie Verwaltungsdaten zur Gemeinde Graz an. Dazu gehören beispielsweise EinwohnerInnen- oder Finanzstatistiken in Form von CSV-Daten oder auch Karten mit Standorten in verschiedenen von Geoinformationsstemen lesbaren Dateiformaten wie Shape oder WMS. Der verwendete Zeichensatz ist bei den meisten Daten *'utf8'*.
 
 ![OGD-Graz](pictures/OGD-Graz.png)
-
-
 
 ### OGD Steiermark
 Das [OGD-Portal des Landes Steimerark](http://data.steiermark.at/) ist ähnlich aufgebaut wie das OGD-Portal der Stadt Graz. Zeichensätze sind allerdings vorwiegend in *'latin-1'* aka *'ISO-8859-1'*.
 
 ![OGD-Steiermark](pictures/OGD-Steiermark.png)
 
-
-
 ### OGD Wien
-Das [OGD-Portal der Stadt Wien](http://data.wien.gv.at/) bietet derzeit das größte Open Data Repository. Was es gegenüber den anderen OGD-Portalen hervorhebt, ist beispielsweise die Verfügbarkeit von Daten zu öffentlichen Verkehrsmitteln und einigen Planungsdaten (z.B. geplante ÖV-Netzwerkerweiterung). Ebenso gibt es ein breites Sortiment an Daten wichtiger Standorte der öffentlichen Versorgung. Der verwendete Zeichensatz ist bei den meisten Daten *'utf8'*.
+Das [OGD-Portal der Stadt Wien](http://data.wien.gv.at/) bietet derzeit das größte Open Data Repository einer Gemeinde in Österreich. Was es gegenüber den anderen OGD-Portalen hervorhebt ist beispielsweise die Verfügbarkeit von Daten zu öffentlichen Verkehrsmitteln und einigen Planungsdaten (z.B. geplante ÖV-Netzwerkerweiterung). Ebenso gibt es ein breites Sortiment an Daten wichtiger Standorte der öffentlichen Versorgung. Der verwendete Zeichensatz ist bei den meisten Daten *'utf8'*.
 
 ![OGD-Wien](pictures/OGD-Wien.png)
 
-
-
 ### OpenStreetMap
+[OpenStreetMap](http://www.openstreetmap.org/) ist ein freies Projekt, das für jeden frei nutzbare Geodaten sammelt. Mit Hilfe dieser Daten können Weltkarten errechnet oder Spezialkarten abgeleitet sowie Navigation betrieben werden. Auf der OpenStreetMap-Startseite ist eine solche Karte abrufbar.
+
+Der Kern des Projekts ist eine Wiki-ähnliche Datenbank mit geographischen Daten. Diese dürfen gemäß der [Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/) verwendet werden. Dadurch ist eine Einbindung in Drucke, Webseiten und Anwendungen wie Navigationssoftware möglich, ohne durch restriktive Lizenzen beschränkt zu sein oder Entgelte zahlen zu müssen. Die Nennung von OpenStreetMap als Datenquelle ist zur Datennutzung erforderlich.
+
+ZITAT http://de.wikipedia.org/wiki/OpenStreetMap
+
 ![OpenStreetMap](pictures/OpenStreetMap.png)
 
-[OpenStreetMap](http://wiki.openstreetmap.org/wiki/Map_Features) stellt die gesamten Daten unter der [Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/) zur Verfügung.
-[OpenStreetMap mit QGis](http://www.qgis.org/en/docs/user_manual/osm/openstreetmap.html)
+Zur Verwendung von OpenStreetMap mit QGIS gibt es eine [eigene Seite](http://www.qgis.org/en/docs/user_manual/osm/openstreetmap.html).
 
+#### Speziele Services
 
-**Cloudmade**
+**[Cloudmade](http://cloudmade.com)** ist ein Unternehmen, welches API's, gerenderte Karten und geographie-bezogene Services zur Verfügung stellt, das sich auf die Verwendung von OpenStreetMap Daten als Grundlage fokussiert hat. 
+ZITAT http://en.wikipedia.org/wiki/CloudMade
+
 [Cloudmade Steiermark](http://downloads.cloudmade.com/europe/western_europe/austria/steiermark#downloads_breadcrumbs)
+
 [Terms and Conditions](http://cloudmade.com/website-terms-conditions) => [Creative Commons Attribution Share-Alike 2.0 License](http://creativecommons.org/licenses/by-sa/2.0/)
 
-**Geofabrik**
-[Daten](http://download.geofabrik.de/) - [Open Data Commons Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/)
+**[Geofabrik](http://www.geofabrik.de/)** ist ein Unternehmen aus Karlsruhe, die OpenStreetMap Consulting, Training und Software Entwicklungs-Services anbieten. Ins besondere werden [Daten](http://download.geofabrik.de/) unter der [Open Data Commons Open Database License (ODbL)](http://opendatacommons.org/licenses/odbl/) auf unterschiedlichsten räumlichen Hierarchie-Ebenen (Kontinente, Länder, Bundesländer) angeboten.
 
 ## Probleme lösen
-google schoolar
-stackoverflow: helfen und geholfen werden, themenspezifisch
-suchmaschine: wie stellt man dort fragen
-	"How to XXXX" als suchtext
-	Fehlermeldung kopieren: spezifika raus nehmen
-Verhalten in Foren
-zuerst suchen, wenn nicht gefunden selber fragen. zumeist gibt es das eigene problem schon mehree male
-je nach community (wiss. disziplin, software projekt) unterschiedlich. zumeist auf website mehr infos zu finden.
 
-1. Documentation nachsehen
-2. Suchmaschine
+Der Open Source Bereich lebt von einer sehr starken Community, welche sich um Probleme von Usern kümmert, diese beantwortet oder gleich löst. Zuerst sollte aber wie zumeist selber versucht werden, das Problem zu lösen und Fehlerquellen auf der eigenen Seite zu finden. Dazu gibt es mehrere Möglichkeiten, welche wir hier weitergeben möchten.
 
+Der wohl effizienteste und einfachste Weg ist, eine Suchmaschine mit dem Problem zu beauftragen. Man kann im Normalfall davon ausgehen, dass das Problem schon viele andere Menschen gehabt haben und es daher irgendwo im Internet eine Antwort darauf gibt. Die Suchanfrage entweder auf Deutsch oder Englisch stellen, so wie sie für einen Menschen verständlich erscheint, z. Bsp. "Wie installiere ich QGIS in Windows 7?"
 
-Keine Scheu, im Internet bei anderen abzusehen. Dies ist eine hervorragende und weit verbreitete Methoden voneinander zu lernen.
+Sinnvoll ist dabei immer die Version der Software die verwendet wird dazu zu schreiben, in diesem Fall Windows 7. Prinzipiell ist immer darauf auf zu passen, dass keine persönlichen Informationen weiter gegeben werden, wie Authentifizierungs-Keys oder Passworter.
 
+Ein sehr häufiges Ergebnis bei solchen Fragen ist der Verweis auf eine Seite auf [Stackexchange](http://stackexchange.com/).
 
+Das Stack Exchange Netzwerk ist eine Gruppe von Frage-und-Antwort Websites zu Themen in verschiedensten Feldern, jede Seite zu einem spezifischen Thema, wo Frage, Antworten, und Benutzer teil eines Reputations-Belohnungs Prozesses sind. Dies erlaubt eine Selbst-Moderation der Seiten. Als Seiten von speziellem Interesse seien die Bereiche [GIS](http://gis.stackexchange.com/), [Academia](http://academia.stackexchange.com/) und [Open Data](http://opendata.stackexchange.com/) genannt.
 
+ZITAT http://de.wikipedia.org/wiki/Stack_Overflow_%28Website%29
 
+Wenn über die Suche keine Antwort zu finden ist, sollte man als nächsten Schritt in die jeweiligen Communities rein gehen. Egal ob es sich um eine Software dreht, oder um einen Fachbereich in der Wissenschaft, es gibt so gut wie überall eigene Communities die sich mit dem Thema vertiefend auseinander setzen. Oftmals steht einem eine Mailingliste oder ein Forum für Fragen zur verfügung. Davor sollte aber auf jeden Fall auf der Homepage der Community/Software nachgesehen werden, wie sich dieses organisieren und wo am besten Fragen gestellt werden sollten. 
+
+Es wird zumeist nicht gerne gesehen, wenn Fragen die schon tausendmal gestellt wurden über eine Mailingliste mit mehreren Hundert Usern geschickt wird. Zuerst suchen, dann nachsehen und wie die Community funktioniert.
+
+**Üblicher Ablauf:**
++ Documentation nachsehen
++ Suchmaschine befragen
++ Kontakt mit jeweiliger Community aufnehmen: nachsehen auf Website
+
+Und zuletzt: Keine Scheu, im Internet bei anderen ab zu sehen. Dies ist eine hervorragende und weit verbreitete Methoden um voneinander zu lernen.
+
+## TODO
+- Shortest Path, Communities und Centralities recherchieren
+- Zitationen einfügen
+- Bilder einbinden
+- benötigte QGIS plugins checken
+- Theorie: Betweeness, Closeness
+- Theorie: können alle shortest path algorithmen mit impedanzen, also mit gewichtungen arbeiten??
+- einleitung ergänzen
+
+### Später
+- Verkehr gehört noch ausgebaut => David
+- lektorat => David
+- Blog Artikel => David
+- Weiter Anwendungen von Netzwerkanalyse verbessern

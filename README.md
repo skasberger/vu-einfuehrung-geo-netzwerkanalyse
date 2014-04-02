@@ -7,6 +7,8 @@ Das Repository beinhaltet unsere Projektaufgabe: Erstellen eines Skriptums zur E
 
 Das Skriptum wird gemeinsam von David Steinwender und [Stefan Kasberger](http://twitter.com/stefankasberger) erstellt.
 
+**Das Repository ist noch stark im Aufbau und es fehlen noch einige zentrale Teile der Dokumentation!**
+
 Sprache: Deutsch
 - Dokumentation: [CC BY AT 3.0](https://creativecommons.org/licenses/by/3.0/at/)
 - Code: [MIT License](http://opensource.org/licenses/MIT)
@@ -32,44 +34,37 @@ Am besten via Shell Script runterladen:
 sh code/shell/fetch-data.sh
 ```
 
-
-
 ## Aufbau Skriptum
 
-**Aufgaben / Tutorials**
-* Ziel des Tutorials, der Aufgabe anführen.
-* Verwendete Software angeben.
-* Schritte auflisten
-* Conclusio
-* Darauf folgende übliche Schritte -> verweis auf andere Tutorials
-* Weitere Quellen
+**README.md:** Startpunkt für das Repo mit Informationen zu Aufbau, Inhalt, verwendeter Software und Daten und Urheberrecht.
 
-**README**
-Titel
-Kurze Beschreibung
-Verwendete Software und Daten.
-Lizenz
-Kurze Beschreibung der einzelnen Tutorials / Aufgaben
-ToDo
-
-**DEVELOP**
-Alle Dokumentations Files und deren Struktur
-
-### 1. Grundlagen
+**01_Grundlagen.md**
 - Graphentheorie: Einführung in die Graphentheorie, dem mathematisch, statistischen Unterbau der Netzwerkanalyse
-- Spezielles eingehen auf Verkehr & Transport
+- Anwendungsfall Verkehr & Transport
+- Openness: Verwendete Software, Daten, Dateiformate und Urheberrechts-Lizenzen
 - Probleme lösen: Was mache ich, wenn ich nicht mehr weiter komme oder einen Fehler gefunden habe?
-- Tools: Software und Dateiformate, die in dieser Einführung verwendet werden.
 
-### 2. Datensets erstellen und aufbereiten
+**02_Preprocessing.md**
 - Erstellen eines eigenen Graphen
 - Importieren und aufbereiten von Daten aus OpenStreetMap
 - Importieren und aufbereiten von Daten aus dem OGD Portal der Stadt Wien
 
-### 3. Netzwerkanalyse (Verkehr)
+**03_Netzwerkanalyse**
 - Erklärung von Tools zur Netzwerkanalyse
 - Durchführen der Shortest Path, Closest Facility und Service Area Netzwerkanalyse
 
-### 4. Quellen
-http://openscienceasap.org/education/courses/se-networks/
+**04_Quellen:** Auflistung weiterer Quellen zu dem Themenfeld.
+
+**05_Lehrveranstaltung:** Spezielle Informationen zur Lehrveranstaltung "Einführung in die geographische Netzwerkanalyse bei Susanne Janschitz.
+
+**06_FAQ.md:** Frequently Asked Questions Liste
+
+
+**ToDo.md:** Task List
+
+**DEVELOP.md:** Nötige Informationen für Beitragende zum Repository. 
+
+## ToDo
+- Aufbau zu preprocessing und netzwerkanalyse kontrollieren
+
 
