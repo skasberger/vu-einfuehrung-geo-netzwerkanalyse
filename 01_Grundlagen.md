@@ -1,5 +1,5 @@
 
-# Grundlagen
+# 1. Grundlagen
 
 Das folgende Dokument beinhaltet eine Einführung in 
 - 1) die Graphentheorie und deren Anwendungsmöglichkeiten in der Mobilitätsforschung, 
@@ -10,9 +10,9 @@ Weitere Materialien und Informationen erfährt ihr auf der [Übersichts-Seite](h
 
 ## Graphentheorie
 
-Die theoretische Grundlage für Netzwerke ist die Graphentheorie und beschäftigt sich mit der Erforschung von Netzwerk-Strukturen \cite[S. 23]{easley_networks_2010}. Nach Definition spezifiziert ein Graph Beziehungen zwischen verschiedenen Elementen. Er besteht aus einer Sammlung von Objekten, Knoten genannt, mit bestimmten Paaren dieser Objekte verbunden durch Links, genannt Kanten. \citep{easley_networks_2010} Wegen diesem flexiblen Formalismus ist es einfach Netzwerke in den verschiedensten Domainen in der echten Welt zu finden, wie Sozialwissenschaften, Mikro-Biology, Psychology oder Elektrotechnik.
+Die theoretische Grundlage für Netzwerke ist die Graphentheorie und beschäftigt sich mit der Erforschung von Netzwerk-Strukturen (Easley & Kleinberg 2010, S. 23). Nach Definition spezifiziert ein Graph Beziehungen zwischen verschiedenen Elementen. Er besteht aus einer Sammlung von Objekten, Knoten genannt, mit bestimmten Paaren dieser Objekte verbunden durch Links, genannt Kanten (Easley & Kleinberg 2010, S. 23).  Wegen diesem flexiblen Formalismus ist es einfach Netzwerke in den verschiedensten Domainen in der echten Welt zu finden, wie Sozialwissenschaften, Mikro-Biology, Psychology oder Elektrotechnik.
 
-Die verwendeten Begriffe für diese beiden Elemente sind meist je nach Disziplin unterschiedlich \citep{latapy_basic_2008}:
+Die verwendeten Begriffe für diese beiden Elemente sind meist je nach Disziplin unterschiedlich (Latapy & Magnien 2008):
 - Mathematik: Vertizes und Kanten
 - Physik: Sites und Bonds
 - Soziologie: Akteure und Verbindungen
@@ -26,14 +26,12 @@ Die Netzwerktheorie beschäftigt sich mit großen Netzwerken, die mit dem Aufkom
 BILD
 großer Graph
 
-Eulers **[Königsberger-Brückenproblem](https://de.wikipedia.org/wiki/K%C3%B6nigsberger_Br%C3%BCckenproblem)** ist ein bekanntes Problem der Graphentheorie.
-Dieses  besteht darin, wie jede Kante (im Beispiel 7 Brücken) nur einmal passiert werden muss, um am Ende wieder zum Ausgangspunkt zu gelangen. Daraus lassen sich zwei weitere Begriffe ableiten.
+Eulers **[Königsberger-Brückenproblem](https://de.wikipedia.org/wiki/K%C3%B6nigsberger_Br%C3%BCckenproblem)** ist ein bekanntes Problem der Graphentheorie. Dieses  besteht darin, wie jede Kante (im Beispiel 7 Brücken) nur einmal passiert werden muss, um am Ende wieder zum Ausgangspunkt zu gelangen. Daraus lassen sich zwei weitere Begriffe ableiten.
 ![Euler-Brückenproblem](https://upload.wikimedia.org/wikipedia/commons/f/f1/Koenigsberger_bruecken_graph.svg)
 
 * *Eulerkreis*: In einem zusammenhängenden Graphen existiert genau dann ein Eulerkreis, wenn alle Knoten geraden Grad besitzen.
 
 * *Eulerweg*: In einem zusammenhängenden Graphen existiert genau dann ein Eulerweg, wenn zwei Knoten einen ungeraden Grad haben
-
 
 ### Arten von Graphen
 Es gibt verschiedene Unterscheidungsmerkmale für Graphen/Netzwerke, abhängig von deren Struktur und Eigennschaften.
@@ -59,7 +57,7 @@ Es können zwischen einem Paar von Knoten auch mehrere verschiedene Kanten beste
 **Bipartite:**
 Eher wenig Bedeutung in der Geographie.
 
-Bipartite Graphen sind eine spezielle Klasse von Netzwerken, bei denen die Kanten in zwei Mengen (X und Y) unterteilt sind und wo nur Verbindungen zwischen zwei Knoten aus verschiedenen Sets bestehen \citep{easley_networks_2010}. Die Kanten können gerichtet/ungerichtet oder gewichtet/ungewichtet sein.
+Bipartite Graphen sind eine spezielle Klasse von Netzwerken, bei denen die Kanten in zwei Mengen (X und Y) unterteilt sind und wo nur Verbindungen zwischen zwei Knoten aus verschiedenen Sets bestehen (Easley & Kleinberg). Die Kanten können gerichtet/ungerichtet oder gewichtet/ungewichtet sein.
 
 BILD
 konzept bipartite
@@ -85,9 +83,9 @@ Betweeness Centrality stellt den relativen Anteil aller Shortest Path die über 
 
 ### Community Detection
 
-Communities sind Gruppen von Knoten, die möglicherweise gemeinsame Eigenschaften besitzen und/oder ähnliche Rollen innerhalb des Graphens inne haben \citep{fortunato_community_2014}.
+Communities sind Gruppen von Knoten, die möglicherweise gemeinsame Eigenschaften besitzen und/oder ähnliche Rollen innerhalb des Graphens inne haben (Fortunato 2010).
 
-Eine verbundene Komponente eines Graphen ist eine Untermenge der Knoten, wo es 1) von jedem Knoten einen Pfad zu jedem anderen Knoten gibt; und 2) die Untermenge nicht teil einer größeren Sammlung mit der Eigenschaft, dass jeder Knoten jeden anderen erreichen kann, ist \citep[S. 29]{easley_networks_2010}. Große, komplexe Netzwerke haben oft einen sogenannten Giant Component, ein beabsichtigt formaler Begriff für eine verbundene Komponente, die einen signifikanten Anteil aller Knoten enthält \citep[S. 31]{easley_networks_2010}.
+Eine verbundene Komponente eines Graphen ist eine Untermenge der Knoten, wo es 1) von jedem Knoten einen Pfad zu jedem anderen Knoten gibt; und 2) die Untermenge nicht teil einer größeren Sammlung mit der Eigenschaft, dass jeder Knoten jeden anderen erreichen kann, ist (Easley & Kleinberg 2010, S. 29). Große, komplexe Netzwerke haben oft einen sogenannten Giant Component, ein beabsichtigt formaler Begriff für eine verbundene Komponente, die einen signifikanten Anteil aller Knoten enthält (Easley & Kleinberg 2010, S. 31).
 
 ## Anwendungen 
 
@@ -279,7 +277,7 @@ Neben den gängigen Formaten für Rasterdaten, nämlich JFIF, GIF, PNG und GeoTI
 
 ZITAT http://de.wikipedia.org/wiki/Geospatial_Data_Abstraction_Library
 
-### Open Data Formats
+### Open Data Formate
 
 Ein [Offenes Dateiformat](https://de.wikipedia.org/wiki/Offenes_Format) ist eine publizierte Spezifikation zum Speichern digitaler Daten, welche ohne rechtliche oder technische Einschränkungen genutzt werden kann. Die Entwicklung offener Formate steht üblicherweise unter der Aufsicht eines offen zugänglichen Gremiums. Offene Formate müssen sowohl von proprietärer als auch von freier Software bzw. Open-Source-Software implementierbar sein. Offene Formate, Dateiformate wie Container, sind eine Untermenge offener Standards.
 
@@ -341,8 +339,6 @@ ZITAT https://de.wikipedia.org/wiki/SpatiaLite
 [GeoJSON](http://geojson.org/) ist ein offenes Format zum Encodieren einer Vielzahl von geographischen Datenstrukturen. Der Name stammt von [JSON](http://www.json.org/) (JavaScript Object Notation). Daher ist ein jedes GeoJSON-Object auch ein JSON-Object, wodurch JSON-Tools für das Verarbeiten von GeoJSON-Daten verwendet werden können. GeoJSON erlaubt es geographische Daten in einer von Mensch lesbaren Sprache zu speichern die kompakter ist als XML. Räumliche Datenformat-Typen die GeoJSON unterstützt sind mitunter point, polygon, multipolygons, features, geometry collections und bounding boxes, welche zusammen mit charakteristischen Informationen und Attributen gespeichert werden. Die Geometrien und deren Verhältnisse besitzen Eltern-Objekte, wie z.B. feature collections. GeoJSON erlaubt auch das spezifizieren von geographischen Koordinatensystemen mittels OGC CRS (coordinate reference system) oder mit EPSG Code. Wenn kein CRS (Coordinate Reference System) definiert wird, verwendet GeoJSON den WGS84-Geoid.
 REF: übersetzt aus [Spezifikation](http://geojson.org/geojson-spec.html)
 
-http://wiki.alpine-geckos.at/wiki/GeoJSON
-
 #### GeoTIFF
 Ein [GeoTIFF](http://de.wikipedia.org/wiki/GeoTIFF) ist eine spezielle Form eines [TIFF-Bildes](http://de.wikipedia.org/wiki/Tagged_Image_File_Format), also ein Dateiformat zur Speicherung von Bilddaten (Dateinamenserweiterung .geotiff, oft auch nur .tif). Da das TIF-Format eine verlustfreie Speicherung zulässt, eignet es sich gut zur Verarbeitung von geographischen Daten, da es bei Satelliten- und Luftbildern bzw. anderen Rasterdaten oft auf hohe Abbildungsgenauigkeit ankommt.
 
@@ -353,6 +349,7 @@ Die Informationen werden im Gegensatz zum GeoJPEG oder normalem TIF-Format nicht
 GeoTIFF-Dateien können mit allen Algorithmen komprimiert werden, die für das TIF-Format möglich sind, neben diversen verlustfreien Verfahren also auch mit einer verlustbehafteten JPEG-Komprimierung, mit der sich ggf. auf Kosten der Bildqualität eine deutliche Reduktion der Dateigröße erreichen lässt. Allerdings unterstützt nicht jede Applikation alle vom TIF-Format erlaubten Kompressionsalgorithmen.
 
 Die Initiative zur Schaffung des GeoTIFF-Formats geht auf das Unternehmen Intergraph zurück. Seit den frühen 1990er Jahren beschäftigte man sich mit diesem Thema und konnte eine Vielzahl von Unternehmen und Vertretern von Regierungsorganisationen als Unterstützer gewinnen. Zu ihnen zählen namhafte Unternehmen und Institutionen des GIS-Sektors wie ESRI, ERDAS und die USGS. GeoTIFF hat sich als Quasi-Standard zur Darstellung von Rasterdaten entwickelt und wird von den meisten Rasterdaten verarbeitenden GIS-Programmen sowie einigen Bildbearbeitungsprogrammen (u.a. Adobe Photoshop) unterstützt. Die Bildinformationen sind in jedem Programm darstellbar, welches den normalen TIFF-Standard unterstützt.
+
 ZITAT http://de.wikipedia.org/wiki/GeoTIFF
 
 **TIFF** ist, neben PDF und EPS, ein wichtiges Format zum Austausch von Daten in der Druckvorstufe in Verlagen und Druckereien, weil es das von ihnen verwendete CMYK-Farbmodell unterstützt. Außerdem kann man TIFF-Bilder mit hoher Farbtiefe (bis zu 32 Bit pro Farbkomponente) speichern, weshalb TIFF gern zum Datenaustausch bei der RAW-Konvertierung verwendet wird.
@@ -375,7 +372,7 @@ Programme wie Photoshop bieten an, TIFF-Dateien mit separaten Ebenen zu erstelle
 
 #### Markdown
 
-[Markdown ist eine vereinfachte Auszeichnungssprache. Ein Ziel von Markdown ist, dass schon die Ausgangsform ohne weitere Konvertierung leicht lesbar ist. Als Auszeichnungselemente wurden daher vor allem Auszeichnungsarten verwendet, die in Plaintext und E-Mails üblich sind. Die Markdown-Konvertierungssoftware wandelt Text in gültiges und W3C-konformes XHTML um. Als Auszeichnungssprache wird Markdown in Content-Management-Systemen verwendet.][1]
+Markdown ist eine vereinfachte Auszeichnungssprache. Ein Ziel von Markdown ist, dass schon die Ausgangsform ohne weitere Konvertierung leicht lesbar ist. Als Auszeichnungselemente wurden daher vor allem Auszeichnungsarten verwendet, die in Plaintext und E-Mails üblich sind. Die Markdown-Konvertierungssoftware wandelt Text in gültiges und W3C-konformes XHTML um. Als Auszeichnungssprache wird Markdown in Content-Management-Systemen verwendet.
 ZITAT https://de.wikipedia.org/wiki/Markdown
 
 [Daring Fireball](https://daringfireball.net/projects/markdown/)
@@ -467,7 +464,11 @@ Und zuletzt: Keine Scheu, im Internet bei anderen ab zu sehen. Dies ist eine her
 - Blog Artikel => David
 - Weiter Anwendungen von Netzwerkanalyse verbessern
 
-## REFERENZEN
-[1]: https://de.wikipedia.org/wiki/Markdown "Wikipedia Page Markdown, Zugriff 2014-04-03"
+## Referenzen
+- Easley, D., Kleinberg, J., 2010. Networks, Crowds, and Markets: Reasoning About a Highly Connected World. Cambridge University Press, New York, NY, USA.
+- Latapy, M., Magnien, C., Vecchio, N., 2008. Basic notions for the analysis of large two-mode networks. Social Networks 30, 31–48. doi:10.1016/j.socnet.2007.04.006
+- Fortunato, S. 2010. Community detection in graphs http://arxiv.org/pdf/0906.0612.pdf
+
+
 
 

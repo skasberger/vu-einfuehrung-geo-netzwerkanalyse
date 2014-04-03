@@ -1,7 +1,4 @@
-# Netzwerkanalyse
-
-
-
+# 3. Netzwerkanalyse
 
 ## Einleitung
 
@@ -107,6 +104,9 @@ https://en.wikipedia.org/wiki/Vehicle_routing_problem
 ## Häufige Fehler
 
 
+## Referenzen
+- 
+- 
 
 
 
